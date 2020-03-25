@@ -1,0 +1,43 @@
+module top_tb();
+
+reg eachvec;
+
+reg clk;
+reg pw;
+reg nb;
+reg en;
+
+wire ref_pulse;
+wire delay_pulse;                                     
+wire modu_pulse;
+                       
+dpulse i1 ( 
+	.clk(clk),
+	.nb(nb),
+	.en(en),
+	.pw(pw),
+	.ref_pulse(ref_pulse),
+	.delay_pulse(delay_pulse),
+	.rf_modu_pulse(delay_pulse),
+	.pwr_modu_pulse(modu_pulse)
+);
+
+initial                                                
+begin                                                  
+	clk <= 1'b0;
+	pw <= 1'b1;
+   	nb <= 1'b1;  
+	en <= 1'b1;                                                                                                          
+$display("Running testbench");                       
+end 
+
+always begin
+	#(10) clk = ~ clk;
+end
+                                                   
+always begin                                                  
+	#10000000 pw = 1;
+	#100000000 pw = 0;
+end   
+                                                 
+endmodule

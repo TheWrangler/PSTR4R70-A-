@@ -1,0 +1,408 @@
+Analysis & Elaboration report for PSTR4R70
+Wed Mar 25 20:10:50 2020
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: pwr_rst:pwr_rst_inst
+  5. Parameter Settings for User Entity Instance: master_spi:master_spi_inst
+  6. Analysis & Elaboration Settings
+  7. Port Connectivity Checks: "adf4159:adf4159_module_instanced[5].adf4159_inst"
+  8. Port Connectivity Checks: "adf4159:adf4159_module_instanced[4].adf4159_inst"
+  9. Port Connectivity Checks: "adf4159:adf4159_module_instanced[3].adf4159_inst"
+ 10. Port Connectivity Checks: "adf4159:adf4159_module_instanced[2].adf4159_inst"
+ 11. Port Connectivity Checks: "adf4159:adf4159_module_instanced[1].adf4159_inst"
+ 12. Port Connectivity Checks: "adf4159:adf4159_module_instanced[0].adf4159_inst"
+ 13. Port Connectivity Checks: "master_spi:master_spi_inst"
+ 14. Analysis & Elaboration Messages
+ 15. Analysis & Elaboration Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                       ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Elaboration Status      ; Successful - Wed Mar 25 20:10:50 2020           ;
+; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
+; Revision Name                      ; PSTR4R70                                        ;
+; Top-level Entity Name              ; top                                             ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; N/A until Partition Merge                       ;
+;     Total combinational functions  ; N/A until Partition Merge                       ;
+;     Dedicated logic registers      ; N/A until Partition Merge                       ;
+; Total registers                    ; N/A until Partition Merge                       ;
+; Total pins                         ; N/A until Partition Merge                       ;
+; Total virtual pins                 ; N/A until Partition Merge                       ;
+; Total memory bits                  ; N/A until Partition Merge                       ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
+; Total PLLs                         ; N/A until Partition Merge                       ;
++------------------------------------+-------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pwr_rst:pwr_rst_inst ;
++----------------------+---------+----------------------------------+
+; Parameter Name       ; Value   ; Type                             ;
++----------------------+---------+----------------------------------+
+; MAIN_CLOCK_PERIOD    ; 30      ; Signed Integer                   ;
+; PWR_RST_DELAY        ; 1000000 ; Signed Integer                   ;
+; PWR_RST_ACTIVE_LEVEL ; 0       ; Signed Integer                   ;
++----------------------+---------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: master_spi:master_spi_inst ;
++-------------------------+-------+---------------------------------------+
+; Parameter Name          ; Value ; Type                                  ;
++-------------------------+-------+---------------------------------------+
+; MASTER_CMD_BIT_NUM      ; 45    ; Signed Integer                        ;
+; MASTER_REPLY_BIT_NUM    ; 6     ; Signed Integer                        ;
+; MASTER_CMD_SAMPLE_LEVEL ; 1     ; Signed Integer                        ;
++-------------------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                            ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE15E22I7       ;                    ;
+; Top-level entity name                                            ; top                ; PSTR4R70           ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------------------------------------------+
+; Port Connectivity Checks: "adf4159:adf4159_module_instanced[5].adf4159_inst" ;
++---------------+-------+----------+-------------------------------------------+
+; Port          ; Type  ; Severity ; Details                                   ;
++---------------+-------+----------+-------------------------------------------+
+; ints[3..2]    ; Input ; Info     ; Stuck at VCC                              ;
+; ints[11..6]   ; Input ; Info     ; Stuck at GND                              ;
+; ints[1..0]    ; Input ; Info     ; Stuck at GND                              ;
+; ints[5]       ; Input ; Info     ; Stuck at VCC                              ;
+; ints[4]       ; Input ; Info     ; Stuck at GND                              ;
+; fracs[24..22] ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[20..16] ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[13..9]  ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[6..5]   ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[1..0]   ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[15..14] ; Input ; Info     ; Stuck at GND                              ;
+; fracs[8..7]   ; Input ; Info     ; Stuck at GND                              ;
+; fracs[21]     ; Input ; Info     ; Stuck at GND                              ;
+; fracs[4]      ; Input ; Info     ; Stuck at GND                              ;
+; fracs[3]      ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[2]      ; Input ; Info     ; Stuck at GND                              ;
++---------------+-------+----------+-------------------------------------------+
+
+
++------------------------------------------------------------------------------+
+; Port Connectivity Checks: "adf4159:adf4159_module_instanced[4].adf4159_inst" ;
++---------------+-------+----------+-------------------------------------------+
+; Port          ; Type  ; Severity ; Details                                   ;
++---------------+-------+----------+-------------------------------------------+
+; ints[11..6]   ; Input ; Info     ; Stuck at GND                              ;
+; ints[5]       ; Input ; Info     ; Stuck at VCC                              ;
+; ints[4]       ; Input ; Info     ; Stuck at GND                              ;
+; ints[3]       ; Input ; Info     ; Stuck at VCC                              ;
+; ints[2]       ; Input ; Info     ; Stuck at GND                              ;
+; ints[1]       ; Input ; Info     ; Stuck at VCC                              ;
+; ints[0]       ; Input ; Info     ; Stuck at GND                              ;
+; fracs[24..23] ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[20..19] ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[16..15] ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[12..11] ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[7..6]   ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[4..2]   ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[22..21] ; Input ; Info     ; Stuck at GND                              ;
+; fracs[18..17] ; Input ; Info     ; Stuck at GND                              ;
+; fracs[14..13] ; Input ; Info     ; Stuck at GND                              ;
+; fracs[10]     ; Input ; Info     ; Stuck at GND                              ;
+; fracs[9]      ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[8]      ; Input ; Info     ; Stuck at GND                              ;
+; fracs[5]      ; Input ; Info     ; Stuck at GND                              ;
+; fracs[1]      ; Input ; Info     ; Stuck at GND                              ;
+; fracs[0]      ; Input ; Info     ; Stuck at VCC                              ;
++---------------+-------+----------+-------------------------------------------+
+
+
++------------------------------------------------------------------------------+
+; Port Connectivity Checks: "adf4159:adf4159_module_instanced[3].adf4159_inst" ;
++---------------+-------+----------+-------------------------------------------+
+; Port          ; Type  ; Severity ; Details                                   ;
++---------------+-------+----------+-------------------------------------------+
+; ints[5..2]    ; Input ; Info     ; Stuck at VCC                              ;
+; ints[11..8]   ; Input ; Info     ; Stuck at GND                              ;
+; ints[1..0]    ; Input ; Info     ; Stuck at GND                              ;
+; ints[7]       ; Input ; Info     ; Stuck at VCC                              ;
+; ints[6]       ; Input ; Info     ; Stuck at GND                              ;
+; fracs[21..20] ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[16..15] ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[13..12] ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[2..1]   ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[24..22] ; Input ; Info     ; Stuck at GND                              ;
+; fracs[9..6]   ; Input ; Info     ; Stuck at GND                              ;
+; fracs[4..3]   ; Input ; Info     ; Stuck at GND                              ;
+; fracs[19]     ; Input ; Info     ; Stuck at GND                              ;
+; fracs[18]     ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[17]     ; Input ; Info     ; Stuck at GND                              ;
+; fracs[14]     ; Input ; Info     ; Stuck at GND                              ;
+; fracs[11]     ; Input ; Info     ; Stuck at GND                              ;
+; fracs[10]     ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[5]      ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[0]      ; Input ; Info     ; Stuck at GND                              ;
++---------------+-------+----------+-------------------------------------------+
+
+
++------------------------------------------------------------------------------+
+; Port Connectivity Checks: "adf4159:adf4159_module_instanced[2].adf4159_inst" ;
++---------------+-------+----------+-------------------------------------------+
+; Port          ; Type  ; Severity ; Details                                   ;
++---------------+-------+----------+-------------------------------------------+
+; ints[5..2]    ; Input ; Info     ; Stuck at VCC                              ;
+; ints[11..8]   ; Input ; Info     ; Stuck at GND                              ;
+; ints[1..0]    ; Input ; Info     ; Stuck at GND                              ;
+; ints[7]       ; Input ; Info     ; Stuck at VCC                              ;
+; ints[6]       ; Input ; Info     ; Stuck at GND                              ;
+; fracs[21..20] ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[16..15] ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[13..12] ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[2..1]   ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[24..22] ; Input ; Info     ; Stuck at GND                              ;
+; fracs[9..6]   ; Input ; Info     ; Stuck at GND                              ;
+; fracs[4..3]   ; Input ; Info     ; Stuck at GND                              ;
+; fracs[19]     ; Input ; Info     ; Stuck at GND                              ;
+; fracs[18]     ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[17]     ; Input ; Info     ; Stuck at GND                              ;
+; fracs[14]     ; Input ; Info     ; Stuck at GND                              ;
+; fracs[11]     ; Input ; Info     ; Stuck at GND                              ;
+; fracs[10]     ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[5]      ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[0]      ; Input ; Info     ; Stuck at GND                              ;
++---------------+-------+----------+-------------------------------------------+
+
+
++------------------------------------------------------------------------------+
+; Port Connectivity Checks: "adf4159:adf4159_module_instanced[1].adf4159_inst" ;
++---------------+-------+----------+-------------------------------------------+
+; Port          ; Type  ; Severity ; Details                                   ;
++---------------+-------+----------+-------------------------------------------+
+; ints[6..5]    ; Input ; Info     ; Stuck at VCC                              ;
+; ints[11..7]   ; Input ; Info     ; Stuck at GND                              ;
+; ints[4..2]    ; Input ; Info     ; Stuck at GND                              ;
+; ints[1]       ; Input ; Info     ; Stuck at VCC                              ;
+; ints[0]       ; Input ; Info     ; Stuck at GND                              ;
+; fracs[11..9]  ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[5..3]   ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[22..21] ; Input ; Info     ; Stuck at GND                              ;
+; fracs[17..12] ; Input ; Info     ; Stuck at GND                              ;
+; fracs[8..6]   ; Input ; Info     ; Stuck at GND                              ;
+; fracs[2..1]   ; Input ; Info     ; Stuck at GND                              ;
+; fracs[24]     ; Input ; Info     ; Stuck at GND                              ;
+; fracs[23]     ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[20]     ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[19]     ; Input ; Info     ; Stuck at GND                              ;
+; fracs[18]     ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[0]      ; Input ; Info     ; Stuck at VCC                              ;
++---------------+-------+----------+-------------------------------------------+
+
+
++------------------------------------------------------------------------------+
+; Port Connectivity Checks: "adf4159:adf4159_module_instanced[0].adf4159_inst" ;
++---------------+-------+----------+-------------------------------------------+
+; Port          ; Type  ; Severity ; Details                                   ;
++---------------+-------+----------+-------------------------------------------+
+; ints[6..5]    ; Input ; Info     ; Stuck at VCC                              ;
+; ints[11..7]   ; Input ; Info     ; Stuck at GND                              ;
+; ints[4..2]    ; Input ; Info     ; Stuck at GND                              ;
+; ints[1]       ; Input ; Info     ; Stuck at VCC                              ;
+; ints[0]       ; Input ; Info     ; Stuck at GND                              ;
+; fracs[11..9]  ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[5..3]   ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[22..21] ; Input ; Info     ; Stuck at GND                              ;
+; fracs[17..12] ; Input ; Info     ; Stuck at GND                              ;
+; fracs[8..6]   ; Input ; Info     ; Stuck at GND                              ;
+; fracs[2..1]   ; Input ; Info     ; Stuck at GND                              ;
+; fracs[24]     ; Input ; Info     ; Stuck at GND                              ;
+; fracs[23]     ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[20]     ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[19]     ; Input ; Info     ; Stuck at GND                              ;
+; fracs[18]     ; Input ; Info     ; Stuck at VCC                              ;
+; fracs[0]      ; Input ; Info     ; Stuck at VCC                              ;
++---------------+-------+----------+-------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "master_spi:master_spi_inst"                                                                ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; data[44..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+    Info: Processing started: Wed Mar 25 20:10:42 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PSTR4R70 -c PSTR4R70 --analysis_and_elaboration
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file pwr_rst.v
+    Info (12023): Found entity 1: pwr_rst File: F:/PSTR4R70(A)/pwr_rst.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file top.v
+    Info (12023): Found entity 1: top File: F:/PSTR4R70(A)/top.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file master_spi.v
+    Info (12023): Found entity 1: master_spi File: F:/PSTR4R70(A)/master_spi.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file adf4159.v
+    Info (12023): Found entity 1: adf4159 File: F:/PSTR4R70(A)/adf4159.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file adf4159_spi.v
+    Info (12023): Found entity 1: adf4159_spi File: F:/PSTR4R70(A)/adf4159_spi.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file top_tb.v
+    Info (12023): Found entity 1: top_tb File: F:/PSTR4R70(A)/top_tb.v Line: 3
+Info (12127): Elaborating entity "top" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at top.v(107): object "adf4159_int_reg" assigned a value but never read File: F:/PSTR4R70(A)/top.v Line: 107
+Warning (10036): Verilog HDL or VHDL warning at top.v(108): object "adf4159_frac_reg" assigned a value but never read File: F:/PSTR4R70(A)/top.v Line: 108
+Warning (10036): Verilog HDL or VHDL warning at top.v(109): object "adf4159_lo" assigned a value but never read File: F:/PSTR4R70(A)/top.v Line: 109
+Info (12128): Elaborating entity "pwr_rst" for hierarchy "pwr_rst:pwr_rst_inst" File: F:/PSTR4R70(A)/top.v Line: 39
+Info (12128): Elaborating entity "master_spi" for hierarchy "master_spi:master_spi_inst" File: F:/PSTR4R70(A)/top.v Line: 64
+Warning (10230): Verilog HDL assignment warning at master_spi.v(25): truncated value with size 32 to match size of target (1) File: F:/PSTR4R70(A)/master_spi.v Line: 25
+Warning (10230): Verilog HDL assignment warning at master_spi.v(54): truncated value with size 32 to match size of target (6) File: F:/PSTR4R70(A)/master_spi.v Line: 54
+Warning (10230): Verilog HDL assignment warning at master_spi.v(117): truncated value with size 32 to match size of target (6) File: F:/PSTR4R70(A)/master_spi.v Line: 117
+Info (12128): Elaborating entity "adf4159" for hierarchy "adf4159:adf4159_module_instanced[0].adf4159_inst" File: F:/PSTR4R70(A)/top.v Line: 100
+Info (12128): Elaborating entity "adf4159_spi" for hierarchy "adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst" File: F:/PSTR4R70(A)/adf4159.v Line: 35
+Warning (10230): Verilog HDL assignment warning at adf4159_spi.v(49): truncated value with size 32 to match size of target (6) File: F:/PSTR4R70(A)/adf4159_spi.v Line: 49
+Info (144001): Generated suppressed messages file F:/PSTR4R70(A)/output_files/PSTR4R70.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 581 megabytes
+    Info: Processing ended: Wed Mar 25 20:10:50 2020
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:20
+
+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in F:/PSTR4R70(A)/output_files/PSTR4R70.map.smsg.
+
+

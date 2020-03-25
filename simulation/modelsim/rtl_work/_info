@@ -1,0 +1,142 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/PSTR4R70(A)/simulation/modelsim
+vadf4159
+Z1 !s110 1585130352
+!i10b 1
+!s100 P1IS;`4?hH=JDYcV6=ndc0
+IVn?@QbMU@^DAUgBgSVW6a2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1585127103
+8F:/PSTR4R70(A)/adf4159.v
+FF:/PSTR4R70(A)/adf4159.v
+L0 3
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1585130352.000000
+!s107 F:/PSTR4R70(A)/adf4159.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/PSTR4R70(A)|F:/PSTR4R70(A)/adf4159.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+F:/PSTR4R70(A)
+Z7 tCvgOpt 0
+vadf4159_spi
+R1
+!i10b 1
+!s100 ZYalY<=WFTSEfoc7eFL0a3
+IA=7C2N5kNaWmQf3@PndiK2
+R2
+R0
+w1585112704
+8F:/PSTR4R70(A)/adf4159_spi.v
+FF:/PSTR4R70(A)/adf4159_spi.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/PSTR4R70(A)/adf4159_spi.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/PSTR4R70(A)|F:/PSTR4R70(A)/adf4159_spi.v|
+!i113 1
+R5
+R6
+R7
+vmaster_spi
+R1
+!i10b 1
+!s100 ?5PAa:R[YMiN;UzPPB5;?0
+IHg8>iUOghZB:z78Xi=J270
+R2
+R0
+w1585034232
+8F:/PSTR4R70(A)/master_spi.v
+FF:/PSTR4R70(A)/master_spi.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/PSTR4R70(A)/master_spi.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/PSTR4R70(A)|F:/PSTR4R70(A)/master_spi.v|
+!i113 1
+R5
+R6
+R7
+vpwr_rst
+R1
+!i10b 1
+!s100 Ta05CK^7YLfziT`4ImCgQ2
+I=TDo82YfjQDRmdSJABn`C0
+R2
+R0
+w1585029502
+8F:/PSTR4R70(A)/pwr_rst.v
+FF:/PSTR4R70(A)/pwr_rst.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/PSTR4R70(A)/pwr_rst.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/PSTR4R70(A)|F:/PSTR4R70(A)/pwr_rst.v|
+!i113 1
+R5
+R6
+R7
+vtop
+R1
+!i10b 1
+!s100 5>[l2OCSF6]j6h28ML5nB0
+Ib@IOG0:Uf>Tb<j2EFH@]T1
+R2
+R0
+w1585129479
+8F:/PSTR4R70(A)/top.v
+FF:/PSTR4R70(A)/top.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/PSTR4R70(A)/top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/PSTR4R70(A)|F:/PSTR4R70(A)/top.v|
+!i113 1
+R5
+R6
+R7
+vtop_tb
+R1
+!i10b 1
+!s100 Ja^a^ZP5z]el]1bZJe=4_3
+IbCo0Zz3fIz15J^?9eLK3X3
+R2
+R0
+w1585111574
+8F:/PSTR4R70(A)/top_tb.v
+FF:/PSTR4R70(A)/top_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/PSTR4R70(A)/top_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/PSTR4R70(A)|F:/PSTR4R70(A)/top_tb.v|
+!i113 1
+R5
+R6
+R7

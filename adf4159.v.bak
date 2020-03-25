@@ -1,0 +1,14 @@
+`timescale 1ns / 1ps
+
+module adf4159
+#(
+	parameter [31 : 0] MAIN_CLOCK_PERIOD = 7,
+	parameter [31 : 0] PWR_RST_DELAY = 100000000,
+	parameter [0:0] PWR_RST_ACTIVE_LEVEL = 0
+) 
+(
+	input clk,
+	output rst
+);
+
+endmodule
