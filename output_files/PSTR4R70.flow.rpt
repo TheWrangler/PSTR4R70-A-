@@ -1,5 +1,5 @@
 Flow report for PSTR4R70
-Wed Mar 25 20:10:50 2020
+Wed Mar 25 22:31:10 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -40,22 +40,22 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Wed Mar 25 20:10:50 2020           ;
+; Flow Status                        ; Successful - Wed Mar 25 22:31:10 2020           ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
 ; Revision Name                      ; PSTR4R70                                        ;
 ; Top-level Entity Name              ; top                                             ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE15E22I7                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
+; Total logic elements               ; 936 / 15,408 ( 6 % )                            ;
+;     Total combinational functions  ; 863 / 15,408 ( 6 % )                            ;
+;     Dedicated logic registers      ; 817 / 15,408 ( 5 % )                            ;
+; Total registers                    ; 817                                             ;
+; Total pins                         ; 53 / 82 ( 65 % )                                ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0 / 516,096 ( 0 % )                             ;
+; Embedded Multiplier 9-bit elements ; 0 / 112 ( 0 % )                                 ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/25/2020 20:10:42 ;
+; Start date & time ; 03/25/2020 22:30:38 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; PSTR4R70            ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 255268230559710.158513824203196        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 255268230559710.158514663807716        ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; top_tb         ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; top_tb                                 ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
@@ -98,29 +98,41 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                          ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:08     ; 1.0                     ; 581 MB              ; 00:00:20                           ;
-; Total                  ; 00:00:08     ; --                      ; --                  ; 00:00:20                           ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 644 MB              ; 00:00:33                           ;
+; Fitter               ; 00:00:10     ; 1.1                     ; 1353 MB             ; 00:00:13                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 547 MB              ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.2                     ; 621 MB              ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 515 MB              ; 00:00:01                           ;
+; Total                ; 00:00:28     ; --                      ; --                  ; 00:00:50                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                     ;
-+------------------------+------------------+-----------+------------+----------------+
-; Module Name            ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+------------------------+------------------+-----------+------------+----------------+
-; Analysis & Elaboration ; WIN7-2020SRHSVK  ; Windows 7 ; 6.1        ; x86_64         ;
-+------------------------+------------------+-----------+------------+----------------+
++-----------------------------------------------------------------------------------+
+; Flow OS Summary                                                                   ;
++----------------------+------------------+-----------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++----------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis ; WIN7-2020SRHSVK  ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter               ; WIN7-2020SRHSVK  ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler            ; WIN7-2020SRHSVK  ; Windows 7 ; 6.1        ; x86_64         ;
+; Timing Analyzer      ; WIN7-2020SRHSVK  ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer   ; WIN7-2020SRHSVK  ; Windows 7 ; 6.1        ; x86_64         ;
++----------------------+------------------+-----------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off PSTR4R70 -c PSTR4R70 --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off PSTR4R70 -c PSTR4R70
+quartus_fit --read_settings_files=off --write_settings_files=off PSTR4R70 -c PSTR4R70
+quartus_asm --read_settings_files=off --write_settings_files=off PSTR4R70 -c PSTR4R70
+quartus_sta PSTR4R70 -c PSTR4R70
+quartus_eda --read_settings_files=off --write_settings_files=off PSTR4R70 -c PSTR4R70
 
 
 

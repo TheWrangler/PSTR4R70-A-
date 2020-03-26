@@ -166,8 +166,8 @@ GND                          : 95        : gnd    :                   :         
 MSEL1                        : 96        :        :                   :         : 6         :                
 MSEL2                        : 97        :        :                   :         : 6         :                
 fs[5]                        : 98        : output : 3.3-V LVCMOS      :         : 6         : Y              
-vctrl[4]                     : 99        : output : 3.3-V LVCMOS      :         : 6         : Y              
-vctrl[5]                     : 100       : output : 3.3-V LVCMOS      :         : 6         : Y              
+vctrl[5]                     : 99        : output : 3.3-V LVCMOS      :         : 6         : Y              
+vctrl[4]                     : 100       : output : 3.3-V LVCMOS      :         : 6         : Y              
 ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : 101       : output : 3.3-V LVTTL       :         : 6         : N              
 VCCINT                       : 102       : power  :                   : 1.2V    :           :                
 vctrl[6]                     : 103       : output : 3.3-V LVCMOS      :         : 6         : Y              
@@ -200,7 +200,7 @@ GND+                         : 129       :        :                   :         
 VCCIO8                       : 130       : power  :                   : 3.3V    : 8         :                
 GND                          : 131       : gnd    :                   :         :           :                
 spi_clk                      : 132       : input  : 3.3-V LVCMOS      :         : 8         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : 133       :        :                   :         : 8         :                
+adf4159_le[1]                : 133       : output : 3.3-V LVCMOS      :         : 8         : Y              
 adf4159_data[1]              : 134       : output : 3.3-V LVCMOS      :         : 8         : Y              
 adf4159_clk[1]               : 135       : output : 3.3-V LVCMOS      :         : 8         : Y              
 adf4159_le[5]                : 136       : output : 3.3-V LVCMOS      :         : 8         : Y              
@@ -210,6 +210,6 @@ VCCIO8                       : 139       : power  :                   : 3.3V    
 GND                          : 140       : gnd    :                   :         :           :                
 adf4159_clk[5]               : 141       : output : 3.3-V LVCMOS      :         : 8         : Y              
 fs[4]                        : 142       : output : 3.3-V LVCMOS      :         : 8         : Y              
-adf4159_le[1]                : 143       : output : 3.3-V LVCMOS      :         : 8         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 143       :        :                   :         : 8         :                
 spi_miso                     : 144       : output : 3.3-V LVCMOS      :         : 8         : Y              
 GND                          : EPAD      :        :                   :         :           :                

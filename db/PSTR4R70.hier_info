@@ -44,14 +44,14 @@ fs[4] << <GND>
 fs[5] << <GND>
 fs[6] << <GND>
 fs[7] << <GND>
-vctrl[0] << <VCC>
-vctrl[1] << <GND>
-vctrl[2] << <VCC>
-vctrl[3] << <GND>
-vctrl[4] << <GND>
-vctrl[5] << <VCC>
-vctrl[6] << <GND>
-vctrl[7] << <VCC>
+vctrl[0] << <GND>
+vctrl[1] << <VCC>
+vctrl[2] << <GND>
+vctrl[3] << <VCC>
+vctrl[4] << <VCC>
+vctrl[5] << <GND>
+vctrl[6] << <VCC>
+vctrl[7] << <GND>
 
 
 |top|pwr_rst:pwr_rst_inst

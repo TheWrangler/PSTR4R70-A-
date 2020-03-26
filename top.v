@@ -323,8 +323,8 @@
 //	endgenerate
 
 	assign fs = 8'b00000000;
-	assign vctrl = 8'b1010_0101;
-	//assign vctrl = 8'b0101_1010;
+	//assign vctrl = 8'b1010_0101;
+	assign vctrl = 8'b0101_1010;
 	
 	assign pll_lock = ~pll_lock_i;
  
