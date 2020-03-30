@@ -25,13 +25,13 @@ module master_spi
 	wire master_cmd_sample_level = MASTER_CMD_SAMPLE_LEVEL & 1'b1;
 	reg slave_write_trig = 1'b0;
 	reg [5:0] fsm_read_state = 6'd0;
-	reg [5:0] mosi_bit_count = 6'd0;
-	reg [5:0] miso_bit_count = 6'd0;
+	reg [6:0] mosi_bit_count = 7'd0;
+	reg [6:0] miso_bit_count = 7'd0;
 	always @ (posedge clk) begin
 		if(!rst || spi_cs) begin
 			data <= 40'd0;
 			dready <= 1'b0;
-			mosi_bit_count <= 6'd0;
+			mosi_bit_count <= 7'd0;
 			slave_write_trig <= 1'b0;
 			fsm_read_state <= 6'd0;
 		end
@@ -39,7 +39,7 @@ module master_spi
 			case(fsm_read_state)
 				0 : begin
 					if(spi_cs == 1'b0) begin
-						mosi_bit_count <= 6'd0;
+						mosi_bit_count <= 7'd0;
 						fsm_read_state <= 6'd1;
 					end
 				end
@@ -50,7 +50,7 @@ module master_spi
 				end
 				2 : begin
 					if(spi_clk == master_cmd_sample_level) begin
-						data <= {data[MASTER_CMD_BIT_NUM-2:0],spi_mosi};
+						data <= {spi_mosi,data[MASTER_CMD_BIT_NUM-1:1]};
 						mosi_bit_count <= mosi_bit_count + 1;
 						fsm_read_state <= 6'd3;
 					end
@@ -64,7 +64,7 @@ module master_spi
 						end
 						else fsm_read_state <= 6'd1;
 					end
-					else if(mosi_bit_count > MASTER_CMD_BIT_NUM)
+					else if(mosi_bit_count == MASTER_CMD_BIT_NUM)
 						fsm_read_state <= 6'd4;
 					else fsm_read_state <= 6'd1;
 				end
@@ -95,7 +95,7 @@ module master_spi
 	always @ (negedge clk) begin
 		if(!rst || spi_cs) begin
 			spi_miso <= 1'b0;
-			miso_bit_count = 6'd0;
+			miso_bit_count = 7'd0;
 			fsm_write_state <= 6'd0;
 		end
 		else begin
@@ -103,7 +103,7 @@ module master_spi
 				0 : begin
 					if(slave_write_trig == 1'b1) begin
 						pll_lock_state <= pll_lock;
-						miso_bit_count <= 6'd0;
+						miso_bit_count <= 7'd0;
 						fsm_write_state <= 6'd1;
 					end
 				end

@@ -8,6 +8,9 @@ module adf4159
 	input load,
 	input [11:0] ints,
 	input [24:0] fracs,
+	input ref_doubled,
+	input [4:0] r_counter,
+	input prescaler,
 	
 	output reg busy,
 	
@@ -62,6 +65,9 @@ module adf4159
 					reg_var_temp[14:3]= fracs[24:13];
 					reg_var_temp[59:47]= fracs[12:0];
 					reg_var_temp[26:15]= ints[11:0];
+					reg_var_temp[84] = ref_doubled;
+					reg_var_temp[83:79] = r_counter;
+					reg_var_temp[86] = prescaler;
 					busy <= 1'b1;
 					fsm_state <= 6'd2;
 				end

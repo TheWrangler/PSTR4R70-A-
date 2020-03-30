@@ -3,55 +3,55 @@ clk => clk.IN8
 spi_clk => spi_clk.IN1
 spi_cs => spi_cs.IN1
 spi_mosi => spi_mosi.IN1
-spi_miso << master_spi:master_spi_inst.spi_miso
-adf4159_clk[0] << adf4159:adf4159_module_instanced[0].adf4159_inst.spi_clk
-adf4159_clk[1] << adf4159:adf4159_module_instanced[1].adf4159_inst.spi_clk
-adf4159_clk[2] << adf4159:adf4159_module_instanced[2].adf4159_inst.spi_clk
-adf4159_clk[3] << adf4159:adf4159_module_instanced[3].adf4159_inst.spi_clk
-adf4159_clk[4] << adf4159:adf4159_module_instanced[4].adf4159_inst.spi_clk
-adf4159_clk[5] << adf4159:adf4159_module_instanced[5].adf4159_inst.spi_clk
-adf4159_data[0] << adf4159:adf4159_module_instanced[0].adf4159_inst.spi_data
-adf4159_data[1] << adf4159:adf4159_module_instanced[1].adf4159_inst.spi_data
-adf4159_data[2] << adf4159:adf4159_module_instanced[2].adf4159_inst.spi_data
-adf4159_data[3] << adf4159:adf4159_module_instanced[3].adf4159_inst.spi_data
-adf4159_data[4] << adf4159:adf4159_module_instanced[4].adf4159_inst.spi_data
-adf4159_data[5] << adf4159:adf4159_module_instanced[5].adf4159_inst.spi_data
-adf4159_le[0] << adf4159:adf4159_module_instanced[0].adf4159_inst.spi_le
-adf4159_le[1] << adf4159:adf4159_module_instanced[1].adf4159_inst.spi_le
-adf4159_le[2] << adf4159:adf4159_module_instanced[2].adf4159_inst.spi_le
-adf4159_le[3] << adf4159:adf4159_module_instanced[3].adf4159_inst.spi_le
-adf4159_le[4] << adf4159:adf4159_module_instanced[4].adf4159_inst.spi_le
-adf4159_le[5] << adf4159:adf4159_module_instanced[5].adf4159_inst.spi_le
-pll_lock[0] << pll_lock[0].DB_MAX_OUTPUT_PORT_TYPE
-pll_lock[1] << pll_lock[1].DB_MAX_OUTPUT_PORT_TYPE
-pll_lock[2] << pll_lock[2].DB_MAX_OUTPUT_PORT_TYPE
-pll_lock[3] << pll_lock[3].DB_MAX_OUTPUT_PORT_TYPE
-pll_lock[4] << pll_lock[4].DB_MAX_OUTPUT_PORT_TYPE
-pll_lock[5] << pll_lock[5].DB_MAX_OUTPUT_PORT_TYPE
+spi_miso <= master_spi:master_spi_inst.spi_miso
+adf4159_clk[0] <= adf4159:adf4159_inst_1.spi_clk
+adf4159_clk[1] <= adf4159:adf4159_inst_2.spi_clk
+adf4159_clk[2] <= adf4159:adf4159_inst_3.spi_clk
+adf4159_clk[3] <= adf4159:adf4159_inst_4.spi_clk
+adf4159_clk[4] <= adf4159:adf4159_inst_5.spi_clk
+adf4159_clk[5] <= adf4159:adf4159_inst_6.spi_clk
+adf4159_data[0] <= adf4159:adf4159_inst_1.spi_data
+adf4159_data[1] <= adf4159:adf4159_inst_2.spi_data
+adf4159_data[2] <= adf4159:adf4159_inst_3.spi_data
+adf4159_data[3] <= adf4159:adf4159_inst_4.spi_data
+adf4159_data[4] <= adf4159:adf4159_inst_5.spi_data
+adf4159_data[5] <= adf4159:adf4159_inst_6.spi_data
+adf4159_le[0] <= adf4159:adf4159_inst_1.spi_le
+adf4159_le[1] <= adf4159:adf4159_inst_2.spi_le
+adf4159_le[2] <= adf4159:adf4159_inst_3.spi_le
+adf4159_le[3] <= adf4159:adf4159_inst_4.spi_le
+adf4159_le[4] <= adf4159:adf4159_inst_5.spi_le
+adf4159_le[5] <= adf4159:adf4159_inst_6.spi_le
+pll_lock[0] <= pll_lock[0].DB_MAX_OUTPUT_PORT_TYPE
+pll_lock[1] <= pll_lock[1].DB_MAX_OUTPUT_PORT_TYPE
+pll_lock[2] <= pll_lock[2].DB_MAX_OUTPUT_PORT_TYPE
+pll_lock[3] <= pll_lock[3].DB_MAX_OUTPUT_PORT_TYPE
+pll_lock[4] <= pll_lock[4].DB_MAX_OUTPUT_PORT_TYPE
+pll_lock[5] <= pll_lock[5].DB_MAX_OUTPUT_PORT_TYPE
 pll_lock_i[0] => pll_lock[0].IN1
 pll_lock_i[1] => pll_lock[1].IN1
 pll_lock_i[2] => pll_lock[2].IN1
 pll_lock_i[3] => pll_lock[3].IN1
 pll_lock_i[4] => pll_lock[4].IN1
 pll_lock_i[5] => pll_lock[5].IN1
-freq_trig1 => ~NO_FANOUT~
-freq_trig2 => ~NO_FANOUT~
-fs[0] << <GND>
-fs[1] << <GND>
-fs[2] << <GND>
-fs[3] << <GND>
-fs[4] << <GND>
-fs[5] << <GND>
-fs[6] << <GND>
-fs[7] << <GND>
-vctrl[0] << <GND>
-vctrl[1] << <VCC>
-vctrl[2] << <GND>
-vctrl[3] << <VCC>
-vctrl[4] << <VCC>
-vctrl[5] << <GND>
-vctrl[6] << <VCC>
-vctrl[7] << <GND>
+freq_trig1 => freq_trig1_dege[0].DATAIN
+freq_trig2 => freq_trig2_dege[0].DATAIN
+fs[0] <= <GND>
+fs[1] <= <GND>
+fs[2] <= <GND>
+fs[3] <= <GND>
+fs[4] <= <GND>
+fs[5] <= <GND>
+fs[6] <= <GND>
+fs[7] <= <GND>
+vctrl[0] <= <GND>
+vctrl[1] <= <VCC>
+vctrl[2] <= <GND>
+vctrl[3] <= <VCC>
+vctrl[4] <= <VCC>
+vctrl[5] <= <GND>
+vctrl[6] <= <VCC>
+vctrl[7] <= <GND>
 
 
 |top|pwr_rst:pwr_rst_inst
@@ -99,6 +99,7 @@ clk => mosi_bit_count[2].CLK
 clk => mosi_bit_count[3].CLK
 clk => mosi_bit_count[4].CLK
 clk => mosi_bit_count[5].CLK
+clk => mosi_bit_count[6].CLK
 clk => dready~reg0.CLK
 clk => data[0]~reg0.CLK
 clk => data[1]~reg0.CLK
@@ -145,6 +146,12 @@ clk => data[41]~reg0.CLK
 clk => data[42]~reg0.CLK
 clk => data[43]~reg0.CLK
 clk => data[44]~reg0.CLK
+clk => data[45]~reg0.CLK
+clk => data[46]~reg0.CLK
+clk => data[47]~reg0.CLK
+clk => data[48]~reg0.CLK
+clk => data[49]~reg0.CLK
+clk => data[50]~reg0.CLK
 clk => fsm_read_state~8.DATAIN
 clk => pll_lock_state[0].CLK
 clk => pll_lock_state[1].CLK
@@ -158,6 +165,7 @@ clk => miso_bit_count[2].CLK
 clk => miso_bit_count[3].CLK
 clk => miso_bit_count[4].CLK
 clk => miso_bit_count[5].CLK
+clk => miso_bit_count[6].CLK
 clk => spi_miso~reg0.CLK
 clk => fsm_write_state~6.DATAIN
 rst => always1.IN0
@@ -212,6 +220,13 @@ spi_clk => data.OUTPUTSELECT
 spi_clk => data.OUTPUTSELECT
 spi_clk => data.OUTPUTSELECT
 spi_clk => data.OUTPUTSELECT
+spi_clk => data.OUTPUTSELECT
+spi_clk => data.OUTPUTSELECT
+spi_clk => data.OUTPUTSELECT
+spi_clk => data.OUTPUTSELECT
+spi_clk => data.OUTPUTSELECT
+spi_clk => data.OUTPUTSELECT
+spi_clk => mosi_bit_count.OUTPUTSELECT
 spi_clk => mosi_bit_count.OUTPUTSELECT
 spi_clk => mosi_bit_count.OUTPUTSELECT
 spi_clk => mosi_bit_count.OUTPUTSELECT
@@ -237,6 +252,7 @@ spi_clk => miso_bit_count.OUTPUTSELECT
 spi_clk => miso_bit_count.OUTPUTSELECT
 spi_clk => miso_bit_count.OUTPUTSELECT
 spi_clk => miso_bit_count.OUTPUTSELECT
+spi_clk => miso_bit_count.OUTPUTSELECT
 spi_clk => fsm_write_state.OUTPUTSELECT
 spi_clk => fsm_write_state.OUTPUTSELECT
 spi_clk => fsm_write_state.OUTPUTSELECT
@@ -250,6 +266,7 @@ spi_clk => fsm_read_state.OUTPUTSELECT
 spi_clk => fsm_read_state.OUTPUTSELECT
 spi_clk => fsm_read_state.OUTPUTSELECT
 spi_cs => always1.IN1
+spi_cs => mosi_bit_count.OUTPUTSELECT
 spi_cs => mosi_bit_count.OUTPUTSELECT
 spi_cs => mosi_bit_count.OUTPUTSELECT
 spi_cs => mosi_bit_count.OUTPUTSELECT
@@ -310,6 +327,12 @@ data[41] <= data[41]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 data[42] <= data[42]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 data[43] <= data[43]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 data[44] <= data[44]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[45] <= data[45]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[46] <= data[46]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[47] <= data[47]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[48] <= data[48]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[49] <= data[49]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[50] <= data[50]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 dready <= dready~reg0.DB_MAX_OUTPUT_PORT_TYPE
 ack => dready.OUTPUTSELECT
 ack => fsm_read_state.OUTPUTSELECT
@@ -321,7 +344,7 @@ ack => fsm_read_state.OUTPUTSELECT
 ack => fsm_read_state.OUTPUTSELECT
 
 
-|top|adf4159:adf4159_module_instanced[0].adf4159_inst
+|top|adf4159:adf4159_inst_1
 clk => clk.IN1
 rst => rst.IN1
 load => reg_var_temp.OUTPUTSELECT
@@ -724,13 +747,20 @@ fracs[21] => Selector340.IN3
 fracs[22] => Selector339.IN3
 fracs[23] => Selector338.IN3
 fracs[24] => Selector337.IN3
+ref_doubled => Selector267.IN2
+r_counter[0] => Selector272.IN2
+r_counter[1] => Selector271.IN2
+r_counter[2] => Selector270.IN2
+r_counter[3] => Selector269.IN2
+r_counter[4] => Selector268.IN2
+prescaler => Selector265.IN2
 busy <= busy~reg0.DB_MAX_OUTPUT_PORT_TYPE
 spi_clk <= adf4159_spi:adf4159_inst.spi_clk
 spi_data <= adf4159_spi:adf4159_inst.spi_data
 spi_le <= adf4159_spi:adf4159_inst.spi_le
 
 
-|top|adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst
+|top|adf4159:adf4159_inst_1|adf4159_spi:adf4159_inst
 clk => reg_var_temp[0].CLK
 clk => reg_var_temp[1].CLK
 clk => reg_var_temp[2].CLK
@@ -903,7 +933,7 @@ spi_le <= spi_le~reg0.DB_MAX_OUTPUT_PORT_TYPE
 busy <= busy~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top|adf4159:adf4159_module_instanced[1].adf4159_inst
+|top|adf4159:adf4159_inst_2
 clk => clk.IN1
 rst => rst.IN1
 load => reg_var_temp.OUTPUTSELECT
@@ -1306,13 +1336,20 @@ fracs[21] => Selector340.IN3
 fracs[22] => Selector339.IN3
 fracs[23] => Selector338.IN3
 fracs[24] => Selector337.IN3
+ref_doubled => Selector267.IN2
+r_counter[0] => Selector272.IN2
+r_counter[1] => Selector271.IN2
+r_counter[2] => Selector270.IN2
+r_counter[3] => Selector269.IN2
+r_counter[4] => Selector268.IN2
+prescaler => Selector265.IN2
 busy <= busy~reg0.DB_MAX_OUTPUT_PORT_TYPE
 spi_clk <= adf4159_spi:adf4159_inst.spi_clk
 spi_data <= adf4159_spi:adf4159_inst.spi_data
 spi_le <= adf4159_spi:adf4159_inst.spi_le
 
 
-|top|adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst
+|top|adf4159:adf4159_inst_2|adf4159_spi:adf4159_inst
 clk => reg_var_temp[0].CLK
 clk => reg_var_temp[1].CLK
 clk => reg_var_temp[2].CLK
@@ -1485,7 +1522,7 @@ spi_le <= spi_le~reg0.DB_MAX_OUTPUT_PORT_TYPE
 busy <= busy~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top|adf4159:adf4159_module_instanced[2].adf4159_inst
+|top|adf4159:adf4159_inst_3
 clk => clk.IN1
 rst => rst.IN1
 load => reg_var_temp.OUTPUTSELECT
@@ -1888,13 +1925,20 @@ fracs[21] => Selector340.IN3
 fracs[22] => Selector339.IN3
 fracs[23] => Selector338.IN3
 fracs[24] => Selector337.IN3
+ref_doubled => Selector267.IN2
+r_counter[0] => Selector272.IN2
+r_counter[1] => Selector271.IN2
+r_counter[2] => Selector270.IN2
+r_counter[3] => Selector269.IN2
+r_counter[4] => Selector268.IN2
+prescaler => Selector265.IN2
 busy <= busy~reg0.DB_MAX_OUTPUT_PORT_TYPE
 spi_clk <= adf4159_spi:adf4159_inst.spi_clk
 spi_data <= adf4159_spi:adf4159_inst.spi_data
 spi_le <= adf4159_spi:adf4159_inst.spi_le
 
 
-|top|adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst
+|top|adf4159:adf4159_inst_3|adf4159_spi:adf4159_inst
 clk => reg_var_temp[0].CLK
 clk => reg_var_temp[1].CLK
 clk => reg_var_temp[2].CLK
@@ -2067,7 +2111,7 @@ spi_le <= spi_le~reg0.DB_MAX_OUTPUT_PORT_TYPE
 busy <= busy~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top|adf4159:adf4159_module_instanced[3].adf4159_inst
+|top|adf4159:adf4159_inst_4
 clk => clk.IN1
 rst => rst.IN1
 load => reg_var_temp.OUTPUTSELECT
@@ -2470,13 +2514,20 @@ fracs[21] => Selector340.IN3
 fracs[22] => Selector339.IN3
 fracs[23] => Selector338.IN3
 fracs[24] => Selector337.IN3
+ref_doubled => Selector267.IN2
+r_counter[0] => Selector272.IN2
+r_counter[1] => Selector271.IN2
+r_counter[2] => Selector270.IN2
+r_counter[3] => Selector269.IN2
+r_counter[4] => Selector268.IN2
+prescaler => Selector265.IN2
 busy <= busy~reg0.DB_MAX_OUTPUT_PORT_TYPE
 spi_clk <= adf4159_spi:adf4159_inst.spi_clk
 spi_data <= adf4159_spi:adf4159_inst.spi_data
 spi_le <= adf4159_spi:adf4159_inst.spi_le
 
 
-|top|adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst
+|top|adf4159:adf4159_inst_4|adf4159_spi:adf4159_inst
 clk => reg_var_temp[0].CLK
 clk => reg_var_temp[1].CLK
 clk => reg_var_temp[2].CLK
@@ -2649,7 +2700,7 @@ spi_le <= spi_le~reg0.DB_MAX_OUTPUT_PORT_TYPE
 busy <= busy~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top|adf4159:adf4159_module_instanced[4].adf4159_inst
+|top|adf4159:adf4159_inst_5
 clk => clk.IN1
 rst => rst.IN1
 load => reg_var_temp.OUTPUTSELECT
@@ -3052,13 +3103,20 @@ fracs[21] => Selector340.IN3
 fracs[22] => Selector339.IN3
 fracs[23] => Selector338.IN3
 fracs[24] => Selector337.IN3
+ref_doubled => Selector267.IN2
+r_counter[0] => Selector272.IN2
+r_counter[1] => Selector271.IN2
+r_counter[2] => Selector270.IN2
+r_counter[3] => Selector269.IN2
+r_counter[4] => Selector268.IN2
+prescaler => Selector265.IN2
 busy <= busy~reg0.DB_MAX_OUTPUT_PORT_TYPE
 spi_clk <= adf4159_spi:adf4159_inst.spi_clk
 spi_data <= adf4159_spi:adf4159_inst.spi_data
 spi_le <= adf4159_spi:adf4159_inst.spi_le
 
 
-|top|adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst
+|top|adf4159:adf4159_inst_5|adf4159_spi:adf4159_inst
 clk => reg_var_temp[0].CLK
 clk => reg_var_temp[1].CLK
 clk => reg_var_temp[2].CLK
@@ -3231,7 +3289,7 @@ spi_le <= spi_le~reg0.DB_MAX_OUTPUT_PORT_TYPE
 busy <= busy~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top|adf4159:adf4159_module_instanced[5].adf4159_inst
+|top|adf4159:adf4159_inst_6
 clk => clk.IN1
 rst => rst.IN1
 load => reg_var_temp.OUTPUTSELECT
@@ -3634,13 +3692,20 @@ fracs[21] => Selector340.IN3
 fracs[22] => Selector339.IN3
 fracs[23] => Selector338.IN3
 fracs[24] => Selector337.IN3
+ref_doubled => Selector267.IN2
+r_counter[0] => Selector272.IN2
+r_counter[1] => Selector271.IN2
+r_counter[2] => Selector270.IN2
+r_counter[3] => Selector269.IN2
+r_counter[4] => Selector268.IN2
+prescaler => Selector265.IN2
 busy <= busy~reg0.DB_MAX_OUTPUT_PORT_TYPE
 spi_clk <= adf4159_spi:adf4159_inst.spi_clk
 spi_data <= adf4159_spi:adf4159_inst.spi_data
 spi_le <= adf4159_spi:adf4159_inst.spi_le
 
 
-|top|adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst
+|top|adf4159:adf4159_inst_6|adf4159_spi:adf4159_inst
 clk => reg_var_temp[0].CLK
 clk => reg_var_temp[1].CLK
 clk => reg_var_temp[2].CLK

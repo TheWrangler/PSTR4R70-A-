@@ -142,6 +142,30 @@
 				{
 					"name" : "spi_mosi",
 					"strict" : false
+				},
+				{
+					"name" : "freq_trig1",
+					"strict" : false
+				},
+				{
+					"name" : "freq_trig2",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
+					"strict" : false
 				}
 			]
 		}
