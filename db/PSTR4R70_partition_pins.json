@@ -104,6 +104,38 @@
 					"strict" : false
 				},
 				{
+					"name" : "vctrl[0]",
+					"strict" : false
+				},
+				{
+					"name" : "vctrl[1]",
+					"strict" : false
+				},
+				{
+					"name" : "vctrl[2]",
+					"strict" : false
+				},
+				{
+					"name" : "vctrl[3]",
+					"strict" : false
+				},
+				{
+					"name" : "vctrl[4]",
+					"strict" : false
+				},
+				{
+					"name" : "vctrl[5]",
+					"strict" : false
+				},
+				{
+					"name" : "vctrl[6]",
+					"strict" : false
+				},
+				{
+					"name" : "vctrl[7]",
+					"strict" : false
+				},
+				{
 					"name" : "pll_lock_i[0]",
 					"strict" : false
 				},
@@ -128,19 +160,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "spi_cs",
-					"strict" : false
-				},
-				{
-					"name" : "spi_clk",
-					"strict" : false
-				},
-				{
 					"name" : "clk",
-					"strict" : false
-				},
-				{
-					"name" : "spi_mosi",
 					"strict" : false
 				},
 				{
@@ -149,6 +169,18 @@
 				},
 				{
 					"name" : "freq_trig2",
+					"strict" : false
+				},
+				{
+					"name" : "spi_mosi",
+					"strict" : false
+				},
+				{
+					"name" : "spi_cs",
+					"strict" : false
+				},
+				{
+					"name" : "spi_clk",
 					"strict" : false
 				},
 				{

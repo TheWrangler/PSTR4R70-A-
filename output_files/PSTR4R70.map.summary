@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Sun Mar 29 22:25:38 2020
+Analysis & Synthesis Status : Successful - Thu Apr 02 16:14:09 2020
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 Revision Name : PSTR4R70
 Top-level Entity Name : top
 Family : Cyclone IV E
-Total logic elements : 4,150
-    Total combinational functions : 3,021
-    Dedicated logic registers : 3,748
-Total registers : 3748
+Total logic elements : 5,691
+    Total combinational functions : 4,170
+    Dedicated logic registers : 4,695
+Total registers : 4695
 Total pins : 53
 Total virtual pins : 0
-Total memory bits : 57,344
+Total memory bits : 466,944
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0

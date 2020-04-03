@@ -1,0 +1,14 @@
+Partition Merge Status : Successful - Tue Mar 31 21:36:08 2020
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Revision Name : PSTR4R70
+Top-level Entity Name : top
+Family : Cyclone IV E
+Total logic elements : 5,392
+    Total combinational functions : 3,912
+    Dedicated logic registers : 4,637
+Total registers : 4637
+Total pins : 53
+Total virtual pins : 0
+Total memory bits : 450,560
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

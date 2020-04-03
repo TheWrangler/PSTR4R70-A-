@@ -99,8 +99,8 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : 28        :        :                   :      
 VCCINT                       : 29        : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 30        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 31        :        :                   :         : 2         :                
-pll_lock_i[0]                : 32        : input  : 3.3-V LVCMOS      :         : 2         : Y              
-pll_lock_i[4]                : 33        : input  : 3.3-V LVCMOS      :         : 2         : Y              
+pll_lock_i[4]                : 32        : input  : 3.3-V LVCMOS      :         : 2         : Y              
+pll_lock_i[0]                : 33        : input  : 3.3-V LVCMOS      :         : 2         : Y              
 VCCINT                       : 34        : power  :                   : 1.2V    :           :                
 VCCA1                        : 35        : power  :                   : 2.5V    :           :                
 GNDA1                        : 36        : gnd    :                   :         :           :                
