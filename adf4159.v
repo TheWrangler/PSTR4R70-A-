@@ -136,63 +136,66 @@ module adf4159
 						fsm_state <= 6'd3;
 					end
 				end
-				//load & pre-load
 				3 : begin
+					reg_var_temp <= reg_var;
+					fsm_state <= 6'd4;
+				end
+				//load & pre-load
+				4 : begin
 					if(pre_load) begin
 						busy <= 1'b1;
-						reg_var_temp <= reg_var;
-						fsm_state <= 6'd4;
+						fsm_state <= 6'd5;
 					end
 					else if(load) begin
 						busy <= 1'b1;
-						fsm_state <= 6'd8;
+						fsm_state <= 6'd9;
 					end
 				end
-				4 : begin
+				5 : begin
 					reg_var_temp[14:3]= fracs[24:13];
 					reg_var_temp[59:47]= fracs[12:0];
 					reg_var_temp[26:15]= ints[11:0];
 					reg_var_temp[84] = ref_doubled;
 					reg_var_temp[83:79] = r_counter;
 					reg_var_temp[86] = prescaler;
-					fsm_state <= 6'd5;
+					fsm_state <= 6'd6;
 				end
-				5 : begin
+				6 : begin
 					if(!spi_busy) begin
 						spi_reg_var_reg <= reg_var_temp[95:64];
 						ad4159_spi_load <= 1'b1;
-						fsm_state <= 6'd6;
+						fsm_state <= 6'd7;
 					end	
 				end
-				6 : begin
+				7 : begin
 					if(spi_busy) begin
 						ad4159_spi_load <= 1'b0;
-						fsm_state <= 6'd7;
-					end
-				end
-				7 : begin
-					if(!spi_busy) begin
-						spi_reg_var_reg <= reg_var_temp[63:32];
-						ad4159_spi_load <= 1'b1;
-						fsm_state <= 6'd9;
+						fsm_state <= 6'd8;
 					end
 				end
 				8 : begin
 					if(!spi_busy) begin
-						spi_reg_var_reg <= reg_var_temp[31:0];
+						spi_reg_var_reg <= reg_var_temp[63:32];
 						ad4159_spi_load <= 1'b1;
-						fsm_state <= 6'd9;
+						fsm_state <= 6'd10;
 					end
 				end
 				9 : begin
-					if(spi_busy) begin
-						ad4159_spi_load <= 1'b0;
+					if(!spi_busy) begin
+						spi_reg_var_reg <= reg_var_temp[31:0];
+						ad4159_spi_load <= 1'b1;
 						fsm_state <= 6'd10;
 					end
 				end
 				10 : begin
+					if(spi_busy) begin
+						ad4159_spi_load <= 1'b0;
+						fsm_state <= 6'd11;
+					end
+				end
+				11 : begin
 					busy <= 1'b0;
-					fsm_state <= 6'd3;
+					fsm_state <= 6'd4;
 				end
 			endcase
 		end

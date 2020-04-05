@@ -92,14 +92,14 @@ module master_spi
 					else fsm_read_state <= 6'd2;
 				end
 				3 : begin
-					data <= {spi_mosi,data[MASTER_CMD_BIT_NUM-1:1]};
+					data <= {data[MASTER_CMD_BIT_NUM-2:0],spi_mosi};
 					data_num <= data_num + 1;
 					fsm_read_state <= 6'd4;
 				end
 				//check cmd
 				4 : begin
 					if(data_num == 4) begin
-						if(data[MASTER_CMD_BIT_NUM-1:MASTER_CMD_BIT_NUM-4] == 4'b1000) begin
+						if(data[3:0/*MASTER_CMD_BIT_NUM-1:MASTER_CMD_BIT_NUM-4*/] == 4'b1000) begin
 							slave_write_trig <= 1'b1;
 							fsm_read_state <= 6'd5;
 						end
@@ -145,13 +145,13 @@ module master_spi
 				end
 				2 : begin
 					if(spi_clk_level == ~master_cmd_sample_level) begin
-						spi_miso <= pll_lock_state[0];
+						spi_miso <= ~pll_lock_state[MASTER_REPLY_BIT_NUM-1];
 						miso_bit_count <= miso_bit_count + 1;
 						fsm_write_state <= 6'd3;
 					end
 				end
 				3 : begin
-					pll_lock_state <= {1'b0,pll_lock_state[MASTER_REPLY_BIT_NUM-1:1]};
+					pll_lock_state <= {pll_lock_state[MASTER_REPLY_BIT_NUM-2:0],1'b0};
 					if(miso_bit_count == MASTER_REPLY_BIT_NUM)
 						fsm_write_state <= 6'd0;
 					else fsm_write_state <= 6'd1;

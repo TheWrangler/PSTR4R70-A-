@@ -1,5 +1,5 @@
-Warning (10268): Verilog HDL information at master_spi.v(123): always construct contains both blocking and non-blocking assignments File: G:/PSTR4R70(A)/master_spi.v Line: 123
-Info (10281): Verilog HDL Declaration information at master_spi.v(8): object "MASTER_CMD_SAMPLE_LEVEL" differs only in case from object "master_cmd_sample_level" in the same scope File: G:/PSTR4R70(A)/master_spi.v Line: 8
-Warning (10268): Verilog HDL information at adf4159.v(103): always construct contains both blocking and non-blocking assignments File: G:/PSTR4R70(A)/adf4159.v Line: 103
-Warning (10268): Verilog HDL information at adf4159_spi.v(23): always construct contains both blocking and non-blocking assignments File: G:/PSTR4R70(A)/adf4159_spi.v Line: 23
-Warning (10268): Verilog HDL information at top_tb.v(86): always construct contains both blocking and non-blocking assignments File: G:/PSTR4R70(A)/top_tb.v Line: 86
+Warning (10268): Verilog HDL information at master_spi.v(123): always construct contains both blocking and non-blocking assignments File: F:/PSTR4R70(A)/master_spi.v Line: 123
+Info (10281): Verilog HDL Declaration information at master_spi.v(8): object "MASTER_CMD_SAMPLE_LEVEL" differs only in case from object "master_cmd_sample_level" in the same scope File: F:/PSTR4R70(A)/master_spi.v Line: 8
+Warning (10268): Verilog HDL information at adf4159.v(103): always construct contains both blocking and non-blocking assignments File: F:/PSTR4R70(A)/adf4159.v Line: 103
+Warning (10268): Verilog HDL information at adf4159_spi.v(23): always construct contains both blocking and non-blocking assignments File: F:/PSTR4R70(A)/adf4159_spi.v Line: 23
+Warning (10268): Verilog HDL information at top_tb.v(86): always construct contains both blocking and non-blocking assignments File: F:/PSTR4R70(A)/top_tb.v Line: 86
