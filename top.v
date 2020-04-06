@@ -26,6 +26,14 @@
 	output [7:0] fs,
 	output [7:0] vctrl
  );
+ 
+	wire locked;
+	wire clk_o;
+	mypll1	mypll1_inst (
+	.inclk0 ( clk ),
+	.c0 ( clk_o ),
+	.locked ( locked )
+	);
 	
 	wire rst;
 	pwr_rst #(
@@ -34,7 +42,7 @@
 		.PWR_RST_ACTIVE_LEVEL(0)
 	) 
 	pwr_rst_inst(
-		.clk(clk),
+		.clk(clk_o),
 		.rst(rst)
 	);
 	
@@ -49,7 +57,7 @@
 		.MASTER_CMD_SAMPLE_LEVEL(1)
 	)
 	master_spi_inst(
-		.clk(clk),
+		.clk(clk_o),
 		.rst(rst),
 		
 		.pll_lock(pll_lock_i),
@@ -87,7 +95,7 @@
 		for(i=0;i<6;i=i+1) begin : adf4159_module_instanced
 			adf4159 adf4159_inst
 			(
-				.clk(clk),
+				.clk(clk_o),
 				.rst(rst),
 
 				.load(adf4159_load[i]),
@@ -120,7 +128,7 @@
 	reg [3:0] adf4159_no = 4'b000;
 	reg [5:0] fsm_state = 6'd0;
 	
-	always @ (posedge clk) begin
+	always @ (posedge clk_o) begin
 		if(!rst) begin
 			master_ack_reg <= 1'b0;
 			load_trig <= 1'b0;
@@ -263,17 +271,21 @@
 	assign adf4159_r_counter = adf4159_r_counter_reg;
 	
 	
-	
-	reg [1:0] freq_trig1_dege = 2'b11;
-	reg [1:0] freq_trig2_dege = 2'b11;
 	reg freq_level_sample_1 = 1;
 	reg freq_level_sample_2 = 1;
 	reg [7:0] freq_level_1_sum = 8'd0;
 	reg [7:0] freq_level_2_sum = 8'd0;
 	reg [7:0] freq_count = 0;
 	
-	always @ (posedge clk) begin
-		if(freq_count == 39) begin
+	always @ (posedge clk_o) begin
+		if(!rst) begin
+			freq_level_sample_1 <= 1;
+			freq_level_sample_2 <= 1;
+			freq_level_1_sum <= 8'd0;
+			freq_level_2_sum <= 8'd0;
+			freq_count = 0;
+		end
+		else if(freq_count == 40) begin
 			freq_count <= 0;
 			
 			if(freq_level_1_sum > 20)
@@ -294,9 +306,18 @@
 		end
 	end
 	
-	always @ (posedge clk) begin
-		freq_trig1_dege <= {freq_trig1_dege[0],freq_level_sample_1};//tx
-		freq_trig2_dege <= {freq_trig2_dege[0],freq_level_sample_2};//rx
+	
+	reg [1:0] freq_trig1_dege = 2'b11;
+	reg [1:0] freq_trig2_dege = 2'b11;
+	always @ (posedge clk_o) begin
+		if(!rst) begin
+			freq_trig1_dege <= 2'b11;
+			freq_trig2_dege <= 2'b11;
+		end
+		else begin
+			freq_trig1_dege <= {freq_trig1_dege[0],freq_level_sample_1};//tx
+			freq_trig2_dege <= {freq_trig2_dege[0],freq_level_sample_2};//rx
+		end
 	end
 	
 	wire [5:0] adf4159_rx_lo;
@@ -319,7 +340,7 @@
 	reg [5:0] adf4159_tx_load_reg = 6'b000000;
 	reg [5:0] adf4159_tx_load_temp_reg = 6'b000000;
 	reg [5:0] fsm_load1_state = 6'd0;
-	always @ (posedge clk) begin
+	always @ (posedge clk_o) begin
 		if(!rst) begin
 			adf4159_tx_load_reg <= 6'b000000;
 			fsm_load1_state <= 6'd0;
@@ -355,7 +376,7 @@
 	reg [5:0] adf4159_rx_load_reg = 6'b000000;
 	reg [5:0] adf4159_rx_load_temp_reg = 6'b000000;
 	reg [5:0] fsm_load2_state = 6'd0;
-	always @ (posedge clk) begin
+	always @ (posedge clk_o) begin
 		if(!rst) begin
 			adf4159_rx_load_reg <= 6'b000000;
 			fsm_load2_state <= 6'd0;

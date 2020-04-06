@@ -23,28 +23,40 @@ module master_spi
 	input ack
 );
 
-	reg [2:0] spi_clk_sample = 0;
-	reg [2:0] spi_cs_sample = 0;
+
+	reg [3:0] spi_clk_sample_sum = 0;
+	reg [3:0] spi_cs_sample_sum = 0;
 	reg spi_clk_level = 1;
 	reg spi_cs_level = 1;
+	reg [3:0] sample_count = 0;
 	
 	always @ (posedge clk) begin
 		if(!rst) begin
-			spi_clk_sample <= 3'b111;
-			spi_cs_sample <= 3'b111;
+			spi_clk_sample_sum <= 0;
+			spi_cs_sample_sum <= 0;
 			spi_clk_level <= 1;
 			spi_cs_level <= 1;
+			sample_count <= 0;
 		end
 		else begin
-			spi_clk_sample <= {spi_clk_sample[1:0],spi_clk};
-			if(spi_clk_sample >= 4)
-				spi_clk_level <= 1;
-			else spi_clk_level <= 0;
-			
-			spi_cs_sample <= {spi_cs_sample[1:0],spi_cs};
-			if(spi_cs_sample >= 4)
-				spi_cs_level <= 1;
-			else spi_cs_level <= 0;
+			if(sample_count == 4) begin
+				sample_count <= 0;
+				if(spi_clk_sample_sum > 2)
+					spi_clk_level <= 1;
+				else spi_clk_level <= 0;
+				
+				if(spi_cs_sample_sum > 2)
+					spi_cs_level <= 1;
+				else spi_cs_level <= 0;
+				
+				spi_clk_sample_sum <= 0;
+				spi_cs_sample_sum <= 0;
+			end
+			else begin
+				spi_clk_sample_sum <= spi_clk_sample_sum + spi_clk;
+				spi_cs_sample_sum <= spi_cs_sample_sum + spi_cs;
+				sample_count <= sample_count + 1;
+			end
 		end
 	end
 	

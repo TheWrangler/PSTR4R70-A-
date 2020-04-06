@@ -1,5 +1,5 @@
 Flow report for PSTR4R70
-Sun Apr 05 18:13:22 2020
+Mon Apr 06 00:56:00 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -40,22 +40,22 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Sun Apr 05 18:13:22 2020           ;
+; Flow Status                        ; Successful - Mon Apr 06 00:56:00 2020           ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
 ; Revision Name                      ; PSTR4R70                                        ;
 ; Top-level Entity Name              ; top                                             ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE15E22I7                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 5,670 / 15,408 ( 37 % )                         ;
-;     Total combinational functions  ; 4,242 / 15,408 ( 28 % )                         ;
-;     Dedicated logic registers      ; 4,715 / 15,408 ( 31 % )                         ;
-; Total registers                    ; 4715                                            ;
+; Total logic elements               ; 5,696 / 15,408 ( 37 % )                         ;
+;     Total combinational functions  ; 4,274 / 15,408 ( 28 % )                         ;
+;     Dedicated logic registers      ; 4,739 / 15,408 ( 31 % )                         ;
+; Total registers                    ; 4739                                            ;
 ; Total pins                         ; 53 / 82 ( 65 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 466,944 / 516,096 ( 90 % )                      ;
 ; Embedded Multiplier 9-bit elements ; 0 / 112 ( 0 % )                                 ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                                  ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/05/2020 18:12:10 ;
+; Start date & time ; 04/06/2020 00:54:01 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; PSTR4R70            ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------------+
 ; Assignment Name                      ; Value                                                                                                                                                                                                                                                                                                                                                                                               ; Default Value ; Entity Name ; Section Id       ;
 +--------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------------+
-; COMPILER_SIGNATURE_ID                ; 255268230559710.158608153003304                                                                                                                                                                                                                                                                                                                                                                     ; --            ; --          ; --               ;
+; COMPILER_SIGNATURE_ID                ; 93328253594015.158610564115328                                                                                                                                                                                                                                                                                                                                                                      ; --            ; --          ; --               ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                                                                                                                                                                                                                                                                                                                                                  ; --            ; --          ; top_tb           ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; top_tb                                                                                                                                                                                                                                                                                                                                                                                              ; --            ; --          ; eda_simulation   ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                                                                                                                                                                                                                                                                                                                                                                                         ; --            ; --          ; eda_simulation   ;
@@ -88,6 +88,12 @@ refer to the applicable agreement for further details.
 ; ENABLE_SIGNALTAP                     ; On                                                                                                                                                                                                                                                                                                                                                                                                  ; --            ; --          ; --               ;
 ; MAX_CORE_JUNCTION_TEMP               ; 100                                                                                                                                                                                                                                                                                                                                                                                                 ; --            ; --          ; --               ;
 ; MIN_CORE_JUNCTION_TEMP               ; -40                                                                                                                                                                                                                                                                                                                                                                                                 ; --            ; --          ; --               ;
+; MISC_FILE                            ; mypll_inst.v                                                                                                                                                                                                                                                                                                                                                                                        ; --            ; --          ; --               ;
+; MISC_FILE                            ; mypll_bb.v                                                                                                                                                                                                                                                                                                                                                                                          ; --            ; --          ; --               ;
+; MISC_FILE                            ; mypll.ppf                                                                                                                                                                                                                                                                                                                                                                                           ; --            ; --          ; --               ;
+; MISC_FILE                            ; mypll1_inst.v                                                                                                                                                                                                                                                                                                                                                                                       ; --            ; --          ; --               ;
+; MISC_FILE                            ; mypll1_bb.v                                                                                                                                                                                                                                                                                                                                                                                         ; --            ; --          ; --               ;
+; MISC_FILE                            ; mypll1.ppf                                                                                                                                                                                                                                                                                                                                                                                          ; --            ; --          ; --               ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE          ; 1.2V                                                                                                                                                                                                                                                                                                                                                                                                ; --            ; --          ; --               ;
 ; PARTITION_COLOR                      ; -- (Not supported for targeted family)                                                                                                                                                                                                                                                                                                                                                              ; --            ; top         ; Top              ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family)                                                                                                                                                                                                                                                                                                                                                              ; --            ; top         ; Top              ;
@@ -133,26 +139,26 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:33     ; 1.0                     ; 741 MB              ; 00:01:05                           ;
-; Fitter               ; 00:00:18     ; 1.1                     ; 1450 MB             ; 00:00:24                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 561 MB              ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.4                     ; 679 MB              ; 00:00:05                           ;
-; EDA Netlist Writer   ; 00:00:07     ; 1.0                     ; 573 MB              ; 00:00:07                           ;
-; Total                ; 00:01:03     ; --                      ; --                  ; 00:01:43                           ;
+; Analysis & Synthesis ; 00:00:55     ; 1.0                     ; 4906 MB             ; 00:01:23                           ;
+; Fitter               ; 00:00:31     ; 1.1                     ; 5392 MB             ; 00:00:34                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4711 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:07     ; 1.2                     ; 4815 MB             ; 00:00:07                           ;
+; EDA Netlist Writer   ; 00:00:12     ; 1.0                     ; 4727 MB             ; 00:00:11                           ;
+; Total                ; 00:01:48     ; --                      ; --                  ; 00:02:18                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Flow OS Summary                                                                   ;
-+----------------------+------------------+-----------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; WIN7-2020SRHSVK  ; Windows 7 ; 6.1        ; x86_64         ;
-; Fitter               ; WIN7-2020SRHSVK  ; Windows 7 ; 6.1        ; x86_64         ;
-; Assembler            ; WIN7-2020SRHSVK  ; Windows 7 ; 6.1        ; x86_64         ;
-; Timing Analyzer      ; WIN7-2020SRHSVK  ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer   ; WIN7-2020SRHSVK  ; Windows 7 ; 6.1        ; x86_64         ;
-+----------------------+------------------+-----------+------------+----------------+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-DV81R7V  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-DV81R7V  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-DV81R7V  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-DV81R7V  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-DV81R7V  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
 
 
 ------------

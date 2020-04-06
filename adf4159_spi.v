@@ -44,19 +44,28 @@ module adf4159_spi
 					fsm_state <= 2;
 				end
 				2 : begin
-					spi_data <= reg_var_temp[31];
-					spi_clk <= 1'b0;
-					load_bit_count <= load_bit_count + 1;
 					fsm_state <= 3;
 				end
 				3 : begin
-					reg_var_temp = {reg_var_temp[30:0],1'b0};
-					spi_clk <= 1'b1;
-					if(load_bit_count == load_bit_num)
-						fsm_state <= 4;
-					else fsm_state <= 2;
+					spi_data <= reg_var_temp[31];
+					spi_clk <= 1'b0;
+					load_bit_count <= load_bit_count + 1;
+					fsm_state <= 4;
 				end
 				4 : begin
+					fsm_state <= 5;
+				end
+				5 : begin
+					reg_var_temp = {reg_var_temp[30:0],1'b0};
+					spi_clk <= 1'b1;
+					fsm_state <= 6;
+				end
+				6 : begin
+					if(load_bit_count == load_bit_num)
+						fsm_state <= 7;
+					else fsm_state <= 3;
+				end
+				7 : begin
 					spi_le <= 1'b1;
 					busy <= 1'b0;
 					fsm_state <= 0;

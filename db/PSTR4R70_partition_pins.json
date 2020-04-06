@@ -160,19 +160,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk",
-					"strict" : false
-				},
-				{
 					"name" : "spi_mosi",
-					"strict" : false
-				},
-				{
-					"name" : "freq_trig1",
-					"strict" : false
-				},
-				{
-					"name" : "freq_trig2",
 					"strict" : false
 				},
 				{
@@ -181,6 +169,14 @@
 				},
 				{
 					"name" : "spi_clk",
+					"strict" : false
+				},
+				{
+					"name" : "freq_trig1",
+					"strict" : false
+				},
+				{
+					"name" : "freq_trig2",
 					"strict" : false
 				},
 				{
