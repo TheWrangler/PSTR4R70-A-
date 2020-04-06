@@ -1,5 +1,5 @@
 Flow report for PSTR4R70
-Mon Apr 06 00:56:00 2020
+Mon Apr 06 21:10:01 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -40,17 +40,17 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Mon Apr 06 00:56:00 2020           ;
+; Flow Status                        ; Successful - Mon Apr 06 21:10:01 2020           ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
 ; Revision Name                      ; PSTR4R70                                        ;
 ; Top-level Entity Name              ; top                                             ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE15E22I7                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 5,696 / 15,408 ( 37 % )                         ;
-;     Total combinational functions  ; 4,274 / 15,408 ( 28 % )                         ;
-;     Dedicated logic registers      ; 4,739 / 15,408 ( 31 % )                         ;
-; Total registers                    ; 4739                                            ;
+; Total logic elements               ; 5,931 / 15,408 ( 38 % )                         ;
+;     Total combinational functions  ; 4,514 / 15,408 ( 29 % )                         ;
+;     Dedicated logic registers      ; 4,789 / 15,408 ( 31 % )                         ;
+; Total registers                    ; 4789                                            ;
 ; Total pins                         ; 53 / 82 ( 65 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 466,944 / 516,096 ( 90 % )                      ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/06/2020 00:54:01 ;
+; Start date & time ; 04/06/2020 21:08:19 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; PSTR4R70            ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------------+
 ; Assignment Name                      ; Value                                                                                                                                                                                                                                                                                                                                                                                               ; Default Value ; Entity Name ; Section Id       ;
 +--------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------------+
-; COMPILER_SIGNATURE_ID                ; 93328253594015.158610564115328                                                                                                                                                                                                                                                                                                                                                                      ; --            ; --          ; --               ;
+; COMPILER_SIGNATURE_ID                ; 154027288512075.158617849901344                                                                                                                                                                                                                                                                                                                                                                     ; --            ; --          ; --               ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                                                                                                                                                                                                                                                                                                                                                  ; --            ; --          ; top_tb           ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; top_tb                                                                                                                                                                                                                                                                                                                                                                                              ; --            ; --          ; eda_simulation   ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                                                                                                                                                                                                                                                                                                                                                                                         ; --            ; --          ; eda_simulation   ;
@@ -139,12 +139,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:55     ; 1.0                     ; 4906 MB             ; 00:01:23                           ;
-; Fitter               ; 00:00:31     ; 1.1                     ; 5392 MB             ; 00:00:34                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4711 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:07     ; 1.2                     ; 4815 MB             ; 00:00:07                           ;
-; EDA Netlist Writer   ; 00:00:12     ; 1.0                     ; 4727 MB             ; 00:00:11                           ;
-; Total                ; 00:01:48     ; --                      ; --                  ; 00:02:18                           ;
+; Analysis & Synthesis ; 00:00:52     ; 1.0                     ; 4896 MB             ; 00:01:31                           ;
+; Fitter               ; 00:00:23     ; 1.1                     ; 5648 MB             ; 00:00:32                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4699 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:05     ; 1.3                     ; 4831 MB             ; 00:00:06                           ;
+; EDA Netlist Writer   ; 00:00:09     ; 1.0                     ; 4717 MB             ; 00:00:09                           ;
+; Total                ; 00:01:31     ; --                      ; --                  ; 00:02:20                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -153,11 +153,11 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-DV81R7V  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-DV81R7V  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-DV81R7V  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-DV81R7V  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-DV81R7V  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; WRANGLER         ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; WRANGLER         ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; WRANGLER         ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; WRANGLER         ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; WRANGLER         ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

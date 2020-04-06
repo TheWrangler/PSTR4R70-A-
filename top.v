@@ -141,7 +141,7 @@
 				0 : begin
 					if(master_data_ready) begin
 						if(master_data_num == 51) begin
-							adf4159_no <= master_data[3:0];
+							adf4159_no <= master_data[50:47];
 							fsm_state <= 6'd1;
 						end
 						else if(master_data_num == 45) begin
@@ -155,11 +155,11 @@
 					case(adf4159_no) 
 						1 : begin
 							if(master_data_num == 51) begin
-								adf4159_int_reg[11:0] <= master_data[15:4];
-								adf4159_frac_reg[24:0] <= master_data[40:16];
-								adf4159_lo[3:0] <= master_data[44:41];
-								adf4159_ref_doubled_reg[0] <= master_data[45];
-								adf4159_r_counter_reg[4:0] <= master_data[50:46];
+								adf4159_int_reg[11:0] <= master_data[46:35];
+								adf4159_frac_reg[24:0] <= master_data[34:10];
+								adf4159_lo[3:0] <= master_data[9:6];
+								adf4159_ref_doubled_reg[0] <= master_data[5];
+								adf4159_r_counter_reg[4:0] <= master_data[4:0];
 							end
 							else if(master_data_num == 45) begin
 								adf4159_int_reg[11:0] <= master_data[40:29];
@@ -170,11 +170,11 @@
 						end
 						2 : begin
 							if(master_data_num == 51) begin
-								adf4159_int_reg[23:12] <= master_data[15:4];
-								adf4159_frac_reg[49:25] <= master_data[40:16];
-								adf4159_lo[7:4] <= master_data[44:41];
-								adf4159_ref_doubled_reg[1] <= master_data[45];
-								adf4159_r_counter_reg[9:5] <= master_data[50:46];
+								adf4159_int_reg[23:12] <= master_data[46:35];
+								adf4159_frac_reg[49:25] <= master_data[34:10];
+								adf4159_lo[7:4] <= master_data[9:6];
+								adf4159_ref_doubled_reg[1] <= master_data[5];
+								adf4159_r_counter_reg[9:5] <= master_data[4:0];
 							end
 							else if(master_data_num == 45) begin
 								adf4159_int_reg[23:12] <= master_data[40:29];
@@ -185,11 +185,11 @@
 						end
 						3 : begin
 							if(master_data_num == 51) begin
-								adf4159_int_reg[35:24] <= master_data[15:4];
-								adf4159_frac_reg[74:50] <= master_data[40:16];
-								adf4159_lo[11:8] <= master_data[44:41];
-								adf4159_ref_doubled_reg[2] <= master_data[45];
-								adf4159_r_counter_reg[14:10] <= master_data[50:46];
+								adf4159_int_reg[35:24] <= master_data[46:35];
+								adf4159_frac_reg[74:50] <= master_data[34:10];
+								adf4159_lo[11:8] <= master_data[9:6];
+								adf4159_ref_doubled_reg[2] <= master_data[5];
+								adf4159_r_counter_reg[14:10] <= master_data[4:0];
 							end
 							else if(master_data_num == 45) begin
 								adf4159_int_reg[35:24] <= master_data[40:29];
@@ -200,11 +200,11 @@
 						end
 						4 : begin
 							if(master_data_num == 51) begin
-								adf4159_int_reg[47:36] <= master_data[15:4];
-								adf4159_frac_reg[99:75] <= master_data[40:16];
-								adf4159_lo[15:12] <= master_data[44:41];
-								adf4159_ref_doubled_reg[3] <= master_data[45];
-								adf4159_r_counter_reg[19:15] <= master_data[50:46];
+								adf4159_int_reg[47:36] <= master_data[46:35];
+								adf4159_frac_reg[99:75] <= master_data[34:10];
+								adf4159_lo[15:12] <= master_data[9:6];
+								adf4159_ref_doubled_reg[3] <= master_data[5];
+								adf4159_r_counter_reg[19:15] <= master_data[4:0];
 							end
 							else if(master_data_num == 45) begin
 								adf4159_int_reg[47:36] <= master_data[40:29];
@@ -215,11 +215,11 @@
 						end
 						5 : begin
 							if(master_data_num == 51) begin
-								adf4159_int_reg[59:48] <= master_data[15:4];
-								adf4159_frac_reg[124:100] <= master_data[40:16];
-								adf4159_lo[19:16] <= master_data[44:41];
-								adf4159_ref_doubled_reg[4] <= master_data[45];
-								adf4159_r_counter_reg[24:20] <= master_data[50:46];
+								adf4159_int_reg[59:48] <= master_data[46:35];
+								adf4159_frac_reg[124:100] <= master_data[34:10];
+								adf4159_lo[19:16] <= master_data[9:6];
+								adf4159_ref_doubled_reg[4] <= master_data[5];
+								adf4159_r_counter_reg[24:20] <= master_data[4:0];
 							end
 							else if(master_data_num == 45) begin
 								adf4159_int_reg[59:48] <= master_data[40:29];
@@ -230,11 +230,11 @@
 						end
 						6 : begin
 							if(master_data_num == 51) begin
-								adf4159_int_reg[71:60] <= master_data[15:4];
-								adf4159_frac_reg[149:125] <= master_data[40:16];
-								adf4159_lo[23:20] <= master_data[44:41];
-								adf4159_ref_doubled_reg[5] <= master_data[45];
-								adf4159_r_counter_reg[29:25] <= master_data[50:46];
+								adf4159_int_reg[71:60] <= master_data[46:35];
+								adf4159_frac_reg[149:125] <= master_data[34:10];
+								adf4159_lo[23:20] <= master_data[9:6];
+								adf4159_ref_doubled_reg[5] <= master_data[5];
+								adf4159_r_counter_reg[29:25] <= master_data[4:0];
 							end
 							else if(master_data_num == 45) begin
 								adf4159_int_reg[71:60] <= master_data[40:29];
@@ -271,54 +271,84 @@
 	assign adf4159_r_counter = adf4159_r_counter_reg;
 	
 	
+	reg [19:0] freq_trig1_dege_samples = 20'hfffff;
+	reg [19:0] freq_trig2_dege_samples = 20'hfffff;
+	
 	reg freq_level_sample_1 = 1;
 	reg freq_level_sample_2 = 1;
 	reg [7:0] freq_level_1_sum = 8'd0;
 	reg [7:0] freq_level_2_sum = 8'd0;
-	reg [7:0] freq_count = 0;
 	
 	always @ (posedge clk_o) begin
 		if(!rst) begin
+			freq_trig1_dege_samples <= 20'hfffff;
+			freq_trig2_dege_samples <= 20'hfffff;
 			freq_level_sample_1 <= 1;
 			freq_level_sample_2 <= 1;
 			freq_level_1_sum <= 8'd0;
 			freq_level_2_sum <= 8'd0;
-			freq_count = 0;
 		end
-		else if(freq_count == 40) begin
-			freq_count <= 0;
+		else begin
+			freq_trig1_dege_samples <= {freq_trig1_dege_samples[18:0],freq_trig1};
+			freq_trig2_dege_samples <= {freq_trig2_dege_samples[18:0],freq_trig2};
 			
-			if(freq_level_1_sum > 20)
+			freq_level_1_sum <= {7'b0000000,freq_trig1_dege_samples[0]} + 
+									  {7'b0000000,freq_trig1_dege_samples[1]} +
+									  {7'b0000000,freq_trig1_dege_samples[2]} +
+									  {7'b0000000,freq_trig1_dege_samples[3]} +
+									  {7'b0000000,freq_trig1_dege_samples[4]} +
+									  {7'b0000000,freq_trig1_dege_samples[5]} +
+									  {7'b0000000,freq_trig1_dege_samples[6]} +
+									  {7'b0000000,freq_trig1_dege_samples[7]} +
+									  {7'b0000000,freq_trig1_dege_samples[8]} +
+									  {7'b0000000,freq_trig1_dege_samples[9]} +
+									  {7'b0000000,freq_trig1_dege_samples[10]} +
+									  {7'b0000000,freq_trig1_dege_samples[11]} +
+									  {7'b0000000,freq_trig1_dege_samples[12]} +
+									  {7'b0000000,freq_trig1_dege_samples[13]} +
+									  {7'b0000000,freq_trig1_dege_samples[14]} +
+									  {7'b0000000,freq_trig1_dege_samples[15]} +
+									  {7'b0000000,freq_trig1_dege_samples[16]} +
+									  {7'b0000000,freq_trig1_dege_samples[17]} +
+									  {7'b0000000,freq_trig1_dege_samples[18]} +
+									  {7'b0000000,freq_trig1_dege_samples[19]};
+			freq_level_2_sum <= {7'b0000000,freq_trig2_dege_samples[0]} + 
+									  {7'b0000000,freq_trig2_dege_samples[1]} +
+									  {7'b0000000,freq_trig2_dege_samples[2]} +
+									  {7'b0000000,freq_trig2_dege_samples[3]} +
+									  {7'b0000000,freq_trig2_dege_samples[4]} +
+									  {7'b0000000,freq_trig2_dege_samples[5]} +
+									  {7'b0000000,freq_trig2_dege_samples[6]} +
+									  {7'b0000000,freq_trig2_dege_samples[7]} +
+									  {7'b0000000,freq_trig2_dege_samples[8]} +
+									  {7'b0000000,freq_trig2_dege_samples[9]} +
+									  {7'b0000000,freq_trig2_dege_samples[10]} +
+									  {7'b0000000,freq_trig2_dege_samples[11]} +
+									  {7'b0000000,freq_trig2_dege_samples[12]} +
+									  {7'b0000000,freq_trig2_dege_samples[13]} +
+									  {7'b0000000,freq_trig2_dege_samples[14]} +
+									  {7'b0000000,freq_trig2_dege_samples[15]} +
+									  {7'b0000000,freq_trig2_dege_samples[16]} +
+									  {7'b0000000,freq_trig2_dege_samples[17]} +
+									  {7'b0000000,freq_trig2_dege_samples[18]} +
+									  {7'b0000000,freq_trig2_dege_samples[19]};
+			
+			if(freq_level_1_sum > 10)
 				freq_level_sample_1 <= 1;
 			else freq_level_sample_1 <= 0;
 			
-			if(freq_level_2_sum > 20)
+			if(freq_level_2_sum > 10)
 				freq_level_sample_2 <= 1;
 			else freq_level_sample_2 <= 0;
-			
-			freq_level_1_sum <= 0;
-			freq_level_2_sum <= 0;
-		end
-		else begin
-			freq_level_1_sum <= freq_level_1_sum + freq_trig1;
-			freq_level_2_sum <= freq_level_2_sum + freq_trig2;
-			freq_count <= freq_count + 1; 
 		end
 	end
-	
 	
 	reg [1:0] freq_trig1_dege = 2'b11;
 	reg [1:0] freq_trig2_dege = 2'b11;
 	always @ (posedge clk_o) begin
-		if(!rst) begin
-			freq_trig1_dege <= 2'b11;
-			freq_trig2_dege <= 2'b11;
-		end
-		else begin
 			freq_trig1_dege <= {freq_trig1_dege[0],freq_level_sample_1};//tx
 			freq_trig2_dege <= {freq_trig2_dege[0],freq_level_sample_2};//rx
 		end
-	end
 	
 	wire [5:0] adf4159_rx_lo;
 	wire [5:0] adf4159_tx_lo;

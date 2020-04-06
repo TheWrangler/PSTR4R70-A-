@@ -1,5 +1,5 @@
 Analysis & Synthesis report for PSTR4R70
-Mon Apr 06 00:54:58 2020
+Mon Apr 06 21:09:14 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -81,15 +81,15 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Apr 06 00:54:58 2020           ;
+; Analysis & Synthesis Status        ; Successful - Mon Apr 06 21:09:14 2020           ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
 ; Revision Name                      ; PSTR4R70                                        ;
 ; Top-level Entity Name              ; top                                             ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 5,789                                           ;
-;     Total combinational functions  ; 4,270                                           ;
-;     Dedicated logic registers      ; 4,739                                           ;
-; Total registers                    ; 4739                                            ;
+; Total logic elements               ; 6,033                                           ;
+;     Total combinational functions  ; 4,510                                           ;
+;     Dedicated logic registers      ; 4,789                                           ;
+; Total registers                    ; 4789                                            ;
 ; Total pins                         ; 53                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 466,944                                         ;
@@ -189,15 +189,17 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -206,76 +208,76 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------+-------------+
 ; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                        ; Library     ;
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------+-------------+
-; pwr_rst.v                                                          ; yes             ; User Verilog HDL File                        ; D:/PSTR4R70(A)/pwr_rst.v                                                            ;             ;
-; top.v                                                              ; yes             ; User Verilog HDL File                        ; D:/PSTR4R70(A)/top.v                                                                ;             ;
-; master_spi.v                                                       ; yes             ; User Verilog HDL File                        ; D:/PSTR4R70(A)/master_spi.v                                                         ;             ;
-; adf4159.v                                                          ; yes             ; User Verilog HDL File                        ; D:/PSTR4R70(A)/adf4159.v                                                            ;             ;
-; adf4159_spi.v                                                      ; yes             ; User Verilog HDL File                        ; D:/PSTR4R70(A)/adf4159_spi.v                                                        ;             ;
-; mypll1.v                                                           ; yes             ; User Wizard-Generated File                   ; D:/PSTR4R70(A)/mypll1.v                                                             ;             ;
-; altpll.tdf                                                         ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/altpll.tdf                        ;             ;
-; aglobal180.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/aglobal180.inc                    ;             ;
-; stratix_pll.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/stratix_pll.inc                   ;             ;
-; stratixii_pll.inc                                                  ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/stratixii_pll.inc                 ;             ;
-; cycloneii_pll.inc                                                  ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/cycloneii_pll.inc                 ;             ;
-; db/mypll1_altpll.v                                                 ; yes             ; Auto-Generated Megafunction                  ; D:/PSTR4R70(A)/db/mypll1_altpll.v                                                   ;             ;
-; sld_signaltap.vhd                                                  ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/sld_signaltap.vhd                 ;             ;
-; sld_signaltap_impl.vhd                                             ; yes             ; Encrypted Megafunction                       ; c:/intelfpga/18.0/quartus/libraries/megafunctions/sld_signaltap_impl.vhd            ;             ;
-; sld_ela_control.vhd                                                ; yes             ; Encrypted Megafunction                       ; c:/intelfpga/18.0/quartus/libraries/megafunctions/sld_ela_control.vhd               ;             ;
-; lpm_shiftreg.tdf                                                   ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/lpm_shiftreg.tdf                  ;             ;
-; lpm_constant.inc                                                   ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/lpm_constant.inc                  ;             ;
-; dffeea.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/dffeea.inc                        ;             ;
-; sld_mbpmg.vhd                                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga/18.0/quartus/libraries/megafunctions/sld_mbpmg.vhd                     ;             ;
-; sld_ela_trigger_flow_mgr.vhd                                       ; yes             ; Encrypted Megafunction                       ; c:/intelfpga/18.0/quartus/libraries/megafunctions/sld_ela_trigger_flow_mgr.vhd      ;             ;
-; sld_buffer_manager.vhd                                             ; yes             ; Encrypted Megafunction                       ; c:/intelfpga/18.0/quartus/libraries/megafunctions/sld_buffer_manager.vhd            ;             ;
-; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/altsyncram.tdf                    ;             ;
-; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/stratix_ram_block.inc             ;             ;
-; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/lpm_mux.inc                       ;             ;
-; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/lpm_decode.inc                    ;             ;
-; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/a_rdenreg.inc                     ;             ;
-; altrom.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/altrom.inc                        ;             ;
-; altram.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/altram.inc                        ;             ;
-; altdpram.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/altdpram.inc                      ;             ;
-; db/altsyncram_ae24.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; D:/PSTR4R70(A)/db/altsyncram_ae24.tdf                                               ;             ;
-; altdpram.tdf                                                       ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/altdpram.tdf                      ;             ;
-; memmodes.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/others/maxplus2/memmodes.inc                    ;             ;
-; a_hdffe.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/a_hdffe.inc                       ;             ;
-; alt_le_rden_reg.inc                                                ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/alt_le_rden_reg.inc               ;             ;
-; altsyncram.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/altsyncram.inc                    ;             ;
-; lpm_mux.tdf                                                        ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/lpm_mux.tdf                       ;             ;
-; muxlut.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/muxlut.inc                        ;             ;
-; bypassff.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/bypassff.inc                      ;             ;
-; altshift.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/altshift.inc                      ;             ;
-; db/mux_tsc.tdf                                                     ; yes             ; Auto-Generated Megafunction                  ; D:/PSTR4R70(A)/db/mux_tsc.tdf                                                       ;             ;
-; lpm_decode.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/lpm_decode.tdf                    ;             ;
-; declut.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/declut.inc                        ;             ;
-; lpm_compare.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/lpm_compare.inc                   ;             ;
-; db/decode_dvf.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; D:/PSTR4R70(A)/db/decode_dvf.tdf                                                    ;             ;
-; lpm_counter.tdf                                                    ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/lpm_counter.tdf                   ;             ;
-; lpm_add_sub.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/lpm_add_sub.inc                   ;             ;
-; cmpconst.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/cmpconst.inc                      ;             ;
-; lpm_counter.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/lpm_counter.inc                   ;             ;
-; alt_counter_stratix.inc                                            ; yes             ; Megafunction                                 ; c:/intelfpga/18.0/quartus/libraries/megafunctions/alt_counter_stratix.inc           ;             ;
-; db/cntr_1ii.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; D:/PSTR4R70(A)/db/cntr_1ii.tdf                                                      ;             ;
-; db/cmpr_tgc.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; D:/PSTR4R70(A)/db/cmpr_tgc.tdf                                                      ;             ;
-; db/cntr_m9j.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; D:/PSTR4R70(A)/db/cntr_m9j.tdf                                                      ;             ;
-; db/cntr_ggi.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; D:/PSTR4R70(A)/db/cntr_ggi.tdf                                                      ;             ;
-; db/cmpr_rgc.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; D:/PSTR4R70(A)/db/cmpr_rgc.tdf                                                      ;             ;
-; db/cntr_23j.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; D:/PSTR4R70(A)/db/cntr_23j.tdf                                                      ;             ;
-; db/cmpr_ngc.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; D:/PSTR4R70(A)/db/cmpr_ngc.tdf                                                      ;             ;
-; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; c:/intelfpga/18.0/quartus/libraries/megafunctions/sld_rom_sr.vhd                    ;             ;
-; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga/18.0/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd     ;             ;
-; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; c:/intelfpga/18.0/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv ;             ;
-; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; c:/intelfpga/18.0/quartus/libraries/megafunctions/sld_hub.vhd                       ; altera_sld  ;
-; db/ip/sldf2162ca5/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; D:/PSTR4R70(A)/db/ip/sldf2162ca5/alt_sld_fab.v                                      ; alt_sld_fab ;
-; db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; D:/PSTR4R70(A)/db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab.v               ; alt_sld_fab ;
-; db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; D:/PSTR4R70(A)/db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_ident.sv        ; alt_sld_fab ;
-; db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; D:/PSTR4R70(A)/db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_presplit.sv     ; alt_sld_fab ;
-; db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; D:/PSTR4R70(A)/db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd   ; alt_sld_fab ;
-; db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; D:/PSTR4R70(A)/db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_splitter.sv     ; alt_sld_fab ;
-; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; c:/intelfpga/18.0/quartus/libraries/megafunctions/sld_jtag_hub.vhd                  ;             ;
-; db/altsyncram_2804.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; D:/PSTR4R70(A)/db/altsyncram_2804.tdf                                               ;             ;
-; db/decode_msa.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; D:/PSTR4R70(A)/db/decode_msa.tdf                                                    ;             ;
-; db/mux_4qb.tdf                                                     ; yes             ; Auto-Generated Megafunction                  ; D:/PSTR4R70(A)/db/mux_4qb.tdf                                                       ;             ;
+; pwr_rst.v                                                          ; yes             ; User Verilog HDL File                        ; F:/PSTR4R70(A)/pwr_rst.v                                                            ;             ;
+; top.v                                                              ; yes             ; User Verilog HDL File                        ; F:/PSTR4R70(A)/top.v                                                                ;             ;
+; master_spi.v                                                       ; yes             ; User Verilog HDL File                        ; F:/PSTR4R70(A)/master_spi.v                                                         ;             ;
+; adf4159.v                                                          ; yes             ; User Verilog HDL File                        ; F:/PSTR4R70(A)/adf4159.v                                                            ;             ;
+; adf4159_spi.v                                                      ; yes             ; User Verilog HDL File                        ; F:/PSTR4R70(A)/adf4159_spi.v                                                        ;             ;
+; mypll1.v                                                           ; yes             ; User Wizard-Generated File                   ; F:/PSTR4R70(A)/mypll1.v                                                             ;             ;
+; altpll.tdf                                                         ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/altpll.tdf                        ;             ;
+; aglobal180.inc                                                     ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/aglobal180.inc                    ;             ;
+; stratix_pll.inc                                                    ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/stratix_pll.inc                   ;             ;
+; stratixii_pll.inc                                                  ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/stratixii_pll.inc                 ;             ;
+; cycloneii_pll.inc                                                  ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/cycloneii_pll.inc                 ;             ;
+; db/mypll1_altpll.v                                                 ; yes             ; Auto-Generated Megafunction                  ; F:/PSTR4R70(A)/db/mypll1_altpll.v                                                   ;             ;
+; sld_signaltap.vhd                                                  ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/sld_signaltap.vhd                 ;             ;
+; sld_signaltap_impl.vhd                                             ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/18.0/quartus/libraries/megafunctions/sld_signaltap_impl.vhd            ;             ;
+; sld_ela_control.vhd                                                ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/18.0/quartus/libraries/megafunctions/sld_ela_control.vhd               ;             ;
+; lpm_shiftreg.tdf                                                   ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/lpm_shiftreg.tdf                  ;             ;
+; lpm_constant.inc                                                   ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/lpm_constant.inc                  ;             ;
+; dffeea.inc                                                         ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/dffeea.inc                        ;             ;
+; sld_mbpmg.vhd                                                      ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/18.0/quartus/libraries/megafunctions/sld_mbpmg.vhd                     ;             ;
+; sld_ela_trigger_flow_mgr.vhd                                       ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/18.0/quartus/libraries/megafunctions/sld_ela_trigger_flow_mgr.vhd      ;             ;
+; sld_buffer_manager.vhd                                             ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/18.0/quartus/libraries/megafunctions/sld_buffer_manager.vhd            ;             ;
+; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/altsyncram.tdf                    ;             ;
+; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/stratix_ram_block.inc             ;             ;
+; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/lpm_mux.inc                       ;             ;
+; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/lpm_decode.inc                    ;             ;
+; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/a_rdenreg.inc                     ;             ;
+; altrom.inc                                                         ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/altrom.inc                        ;             ;
+; altram.inc                                                         ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/altram.inc                        ;             ;
+; altdpram.inc                                                       ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/altdpram.inc                      ;             ;
+; db/altsyncram_ae24.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; F:/PSTR4R70(A)/db/altsyncram_ae24.tdf                                               ;             ;
+; altdpram.tdf                                                       ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/altdpram.tdf                      ;             ;
+; memmodes.inc                                                       ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/others/maxplus2/memmodes.inc                    ;             ;
+; a_hdffe.inc                                                        ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/a_hdffe.inc                       ;             ;
+; alt_le_rden_reg.inc                                                ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/alt_le_rden_reg.inc               ;             ;
+; altsyncram.inc                                                     ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/altsyncram.inc                    ;             ;
+; lpm_mux.tdf                                                        ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/lpm_mux.tdf                       ;             ;
+; muxlut.inc                                                         ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/muxlut.inc                        ;             ;
+; bypassff.inc                                                       ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/bypassff.inc                      ;             ;
+; altshift.inc                                                       ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/altshift.inc                      ;             ;
+; db/mux_tsc.tdf                                                     ; yes             ; Auto-Generated Megafunction                  ; F:/PSTR4R70(A)/db/mux_tsc.tdf                                                       ;             ;
+; lpm_decode.tdf                                                     ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/lpm_decode.tdf                    ;             ;
+; declut.inc                                                         ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/declut.inc                        ;             ;
+; lpm_compare.inc                                                    ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/lpm_compare.inc                   ;             ;
+; db/decode_dvf.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; F:/PSTR4R70(A)/db/decode_dvf.tdf                                                    ;             ;
+; lpm_counter.tdf                                                    ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/lpm_counter.tdf                   ;             ;
+; lpm_add_sub.inc                                                    ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/lpm_add_sub.inc                   ;             ;
+; cmpconst.inc                                                       ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/cmpconst.inc                      ;             ;
+; lpm_counter.inc                                                    ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/lpm_counter.inc                   ;             ;
+; alt_counter_stratix.inc                                            ; yes             ; Megafunction                                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/alt_counter_stratix.inc           ;             ;
+; db/cntr_1ii.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; F:/PSTR4R70(A)/db/cntr_1ii.tdf                                                      ;             ;
+; db/cmpr_tgc.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; F:/PSTR4R70(A)/db/cmpr_tgc.tdf                                                      ;             ;
+; db/cntr_m9j.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; F:/PSTR4R70(A)/db/cntr_m9j.tdf                                                      ;             ;
+; db/cntr_ggi.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; F:/PSTR4R70(A)/db/cntr_ggi.tdf                                                      ;             ;
+; db/cmpr_rgc.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; F:/PSTR4R70(A)/db/cmpr_rgc.tdf                                                      ;             ;
+; db/cntr_23j.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; F:/PSTR4R70(A)/db/cntr_23j.tdf                                                      ;             ;
+; db/cmpr_ngc.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; F:/PSTR4R70(A)/db/cmpr_ngc.tdf                                                      ;             ;
+; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/18.0/quartus/libraries/megafunctions/sld_rom_sr.vhd                    ;             ;
+; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/18.0/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd     ;             ;
+; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/18.0/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv ;             ;
+; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/18.0/quartus/libraries/megafunctions/sld_hub.vhd                       ; altera_sld  ;
+; db/ip/sldf2162ca5/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; F:/PSTR4R70(A)/db/ip/sldf2162ca5/alt_sld_fab.v                                      ; alt_sld_fab ;
+; db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; F:/PSTR4R70(A)/db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab.v               ; alt_sld_fab ;
+; db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; F:/PSTR4R70(A)/db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_ident.sv        ; alt_sld_fab ;
+; db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; F:/PSTR4R70(A)/db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_presplit.sv     ; alt_sld_fab ;
+; db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; F:/PSTR4R70(A)/db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd   ; alt_sld_fab ;
+; db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; F:/PSTR4R70(A)/db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_splitter.sv     ; alt_sld_fab ;
+; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; d:/intelfpga/18.0/quartus/libraries/megafunctions/sld_jtag_hub.vhd                  ;             ;
+; db/altsyncram_2804.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; F:/PSTR4R70(A)/db/altsyncram_2804.tdf                                               ;             ;
+; db/decode_msa.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; F:/PSTR4R70(A)/db/decode_msa.tdf                                                    ;             ;
+; db/mux_4qb.tdf                                                     ; yes             ; Auto-Generated Megafunction                  ; F:/PSTR4R70(A)/db/mux_4qb.tdf                                                       ;             ;
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------+-------------+
 
 
@@ -284,20 +286,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                    ;
 +---------------------------------------------+------------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 5,789                                                                                    ;
+; Estimated Total logic elements              ; 6,033                                                                                    ;
 ;                                             ;                                                                                          ;
-; Total combinational functions               ; 4270                                                                                     ;
+; Total combinational functions               ; 4510                                                                                     ;
 ; Logic element usage by number of LUT inputs ;                                                                                          ;
-;     -- 4 input functions                    ; 3120                                                                                     ;
-;     -- 3 input functions                    ; 673                                                                                      ;
-;     -- <=2 input functions                  ; 477                                                                                      ;
+;     -- 4 input functions                    ; 3270                                                                                     ;
+;     -- 3 input functions                    ; 698                                                                                      ;
+;     -- <=2 input functions                  ; 542                                                                                      ;
 ;                                             ;                                                                                          ;
 ; Logic elements by mode                      ;                                                                                          ;
-;     -- normal mode                          ; 4044                                                                                     ;
-;     -- arithmetic mode                      ; 226                                                                                      ;
+;     -- normal mode                          ; 4267                                                                                     ;
+;     -- arithmetic mode                      ; 243                                                                                      ;
 ;                                             ;                                                                                          ;
-; Total registers                             ; 4739                                                                                     ;
-;     -- Dedicated logic registers            ; 4739                                                                                     ;
+; Total registers                             ; 4789                                                                                     ;
+;     -- Dedicated logic registers            ; 4789                                                                                     ;
 ;     -- I/O registers                        ; 0                                                                                        ;
 ;                                             ;                                                                                          ;
 ; I/O pins                                    ; 53                                                                                       ;
@@ -309,9 +311,9 @@ refer to the applicable agreement for further details.
 ;     -- PLLs                                 ; 1                                                                                        ;
 ;                                             ;                                                                                          ;
 ; Maximum fan-out node                        ; mypll1:mypll1_inst|altpll:altpll_component|mypll1_altpll:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 4432                                                                                     ;
-; Total fan-out                               ; 41352                                                                                    ;
-; Average fan-out                             ; 4.32                                                                                     ;
+; Maximum fan-out                             ; 4482                                                                                     ;
+; Total fan-out                               ; 42246                                                                                    ;
+; Average fan-out                             ; 4.28                                                                                     ;
 +---------------------------------------------+------------------------------------------------------------------------------------------+
 
 
@@ -320,24 +322,24 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                             ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |top                                                                                                                                    ; 4270 (197)          ; 4739 (347)                ; 466944      ; 0            ; 0       ; 0         ; 53   ; 0            ; |top                                                                                                                                                                                                                                                                                                                                            ; top                               ; work         ;
-;    |adf4159:adf4159_module_instanced[0].adf4159_inst|                                                                                   ; 465 (410)           ; 405 (355)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst                                                                                                                                                                                                                                                                                           ; adf4159                           ; work         ;
-;       |adf4159_spi:adf4159_inst|                                                                                                        ; 55 (55)             ; 50 (50)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst                                                                                                                                                                                                                                                                  ; adf4159_spi                       ; work         ;
-;    |adf4159:adf4159_module_instanced[1].adf4159_inst|                                                                                   ; 465 (410)           ; 405 (355)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst                                                                                                                                                                                                                                                                                           ; adf4159                           ; work         ;
-;       |adf4159_spi:adf4159_inst|                                                                                                        ; 55 (55)             ; 50 (50)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst                                                                                                                                                                                                                                                                  ; adf4159_spi                       ; work         ;
-;    |adf4159:adf4159_module_instanced[2].adf4159_inst|                                                                                   ; 463 (408)           ; 405 (355)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst                                                                                                                                                                                                                                                                                           ; adf4159                           ; work         ;
-;       |adf4159_spi:adf4159_inst|                                                                                                        ; 55 (55)             ; 50 (50)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst                                                                                                                                                                                                                                                                  ; adf4159_spi                       ; work         ;
-;    |adf4159:adf4159_module_instanced[3].adf4159_inst|                                                                                   ; 465 (410)           ; 405 (355)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst                                                                                                                                                                                                                                                                                           ; adf4159                           ; work         ;
-;       |adf4159_spi:adf4159_inst|                                                                                                        ; 55 (55)             ; 50 (50)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst                                                                                                                                                                                                                                                                  ; adf4159_spi                       ; work         ;
-;    |adf4159:adf4159_module_instanced[4].adf4159_inst|                                                                                   ; 463 (408)           ; 405 (355)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst                                                                                                                                                                                                                                                                                           ; adf4159                           ; work         ;
-;       |adf4159_spi:adf4159_inst|                                                                                                        ; 55 (55)             ; 50 (50)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst                                                                                                                                                                                                                                                                  ; adf4159_spi                       ; work         ;
-;    |adf4159:adf4159_module_instanced[5].adf4159_inst|                                                                                   ; 463 (408)           ; 405 (355)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst                                                                                                                                                                                                                                                                                           ; adf4159                           ; work         ;
-;       |adf4159_spi:adf4159_inst|                                                                                                        ; 55 (55)             ; 50 (50)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst                                                                                                                                                                                                                                                                  ; adf4159_spi                       ; work         ;
-;    |master_spi:master_spi_inst|                                                                                                         ; 136 (136)           ; 98 (98)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|master_spi:master_spi_inst                                                                                                                                                                                                                                                                                                                 ; master_spi                        ; work         ;
+; |top                                                                                                                                    ; 4510 (291)          ; 4789 (373)                ; 466944      ; 0            ; 0       ; 0         ; 53   ; 0            ; |top                                                                                                                                                                                                                                                                                                                                            ; top                               ; work         ;
+;    |adf4159:adf4159_module_instanced[0].adf4159_inst|                                                                                   ; 488 (408)           ; 409 (355)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst                                                                                                                                                                                                                                                                                           ; adf4159                           ; work         ;
+;       |adf4159_spi:adf4159_inst|                                                                                                        ; 80 (80)             ; 54 (54)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst                                                                                                                                                                                                                                                                  ; adf4159_spi                       ; work         ;
+;    |adf4159:adf4159_module_instanced[1].adf4159_inst|                                                                                   ; 486 (408)           ; 409 (355)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst                                                                                                                                                                                                                                                                                           ; adf4159                           ; work         ;
+;       |adf4159_spi:adf4159_inst|                                                                                                        ; 78 (78)             ; 54 (54)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst                                                                                                                                                                                                                                                                  ; adf4159_spi                       ; work         ;
+;    |adf4159:adf4159_module_instanced[2].adf4159_inst|                                                                                   ; 488 (408)           ; 409 (355)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst                                                                                                                                                                                                                                                                                           ; adf4159                           ; work         ;
+;       |adf4159_spi:adf4159_inst|                                                                                                        ; 80 (80)             ; 54 (54)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst                                                                                                                                                                                                                                                                  ; adf4159_spi                       ; work         ;
+;    |adf4159:adf4159_module_instanced[3].adf4159_inst|                                                                                   ; 488 (408)           ; 409 (355)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst                                                                                                                                                                                                                                                                                           ; adf4159                           ; work         ;
+;       |adf4159_spi:adf4159_inst|                                                                                                        ; 80 (80)             ; 54 (54)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst                                                                                                                                                                                                                                                                  ; adf4159_spi                       ; work         ;
+;    |adf4159:adf4159_module_instanced[4].adf4159_inst|                                                                                   ; 488 (408)           ; 409 (355)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst                                                                                                                                                                                                                                                                                           ; adf4159                           ; work         ;
+;       |adf4159_spi:adf4159_inst|                                                                                                        ; 80 (80)             ; 54 (54)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst                                                                                                                                                                                                                                                                  ; adf4159_spi                       ; work         ;
+;    |adf4159:adf4159_module_instanced[5].adf4159_inst|                                                                                   ; 488 (408)           ; 409 (355)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst                                                                                                                                                                                                                                                                                           ; adf4159                           ; work         ;
+;       |adf4159_spi:adf4159_inst|                                                                                                        ; 80 (80)             ; 54 (54)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst                                                                                                                                                                                                                                                                  ; adf4159_spi                       ; work         ;
+;    |master_spi:master_spi_inst|                                                                                                         ; 142 (142)           ; 98 (98)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|master_spi:master_spi_inst                                                                                                                                                                                                                                                                                                                 ; master_spi                        ; work         ;
 ;    |mypll1:mypll1_inst|                                                                                                                 ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|mypll1:mypll1_inst                                                                                                                                                                                                                                                                                                                         ; mypll1                            ; work         ;
 ;       |altpll:altpll_component|                                                                                                         ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|mypll1:mypll1_inst|altpll:altpll_component                                                                                                                                                                                                                                                                                                 ; altpll                            ; work         ;
 ;          |mypll1_altpll:auto_generated|                                                                                                 ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|mypll1:mypll1_inst|altpll:altpll_component|mypll1_altpll:auto_generated                                                                                                                                                                                                                                                                    ; mypll1_altpll                     ; work         ;
-;    |pwr_rst:pwr_rst_inst|                                                                                                               ; 46 (46)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|pwr_rst:pwr_rst_inst                                                                                                                                                                                                                                                                                                                       ; pwr_rst                           ; work         ;
+;    |pwr_rst:pwr_rst_inst|                                                                                                               ; 44 (44)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|pwr_rst:pwr_rst_inst                                                                                                                                                                                                                                                                                                                       ; pwr_rst                           ; work         ;
 ;    |sld_hub:auto_hub|                                                                                                                   ; 130 (1)             ; 91 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                           ; sld_hub                           ; altera_sld   ;
 ;       |alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric| ; 129 (0)             ; 91 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric                                                                                                                                                                                           ; alt_sld_fab_with_jtag_input       ; altera_sld   ;
 ;          |alt_sld_fab:instrumentation_fabric|                                                                                           ; 129 (0)             ; 91 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                                                                                        ; alt_sld_fab                       ; alt_sld_fab  ;
@@ -585,20 +587,21 @@ Encoding Type:  One-Hot
 
 
 Encoding Type:  One-Hot
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |top|adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state                                                                 ;
-+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
-; Name             ; fsm_state.000111 ; fsm_state.000110 ; fsm_state.000101 ; fsm_state.000100 ; fsm_state.000011 ; fsm_state.000010 ; fsm_state.000001 ; fsm_state.000000 ;
-+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
-; fsm_state.000000 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ;
-; fsm_state.000001 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 1                ;
-; fsm_state.000010 ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 1                ;
-; fsm_state.000011 ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 1                ;
-; fsm_state.000100 ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 1                ;
-; fsm_state.000101 ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 1                ;
-; fsm_state.000110 ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
-; fsm_state.000111 ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
-+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top|adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state                                                                                    ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+; Name             ; fsm_state.000111 ; fsm_state.000110 ; fsm_state.000101 ; fsm_state.000100 ; fsm_state.000011 ; fsm_state.000010 ; fsm_state.000001 ; fsm_state.000000 ; fsm_state.001000 ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+; fsm_state.000000 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ;
+; fsm_state.000001 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 1                ; 0                ;
+; fsm_state.000010 ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 1                ; 0                ;
+; fsm_state.000011 ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.000100 ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.000101 ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.000110 ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.000111 ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.001000 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 1                ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
 
 
 Encoding Type:  One-Hot
@@ -623,20 +626,21 @@ Encoding Type:  One-Hot
 
 
 Encoding Type:  One-Hot
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |top|adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state                                                                 ;
-+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
-; Name             ; fsm_state.000111 ; fsm_state.000110 ; fsm_state.000101 ; fsm_state.000100 ; fsm_state.000011 ; fsm_state.000010 ; fsm_state.000001 ; fsm_state.000000 ;
-+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
-; fsm_state.000000 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ;
-; fsm_state.000001 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 1                ;
-; fsm_state.000010 ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 1                ;
-; fsm_state.000011 ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 1                ;
-; fsm_state.000100 ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 1                ;
-; fsm_state.000101 ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 1                ;
-; fsm_state.000110 ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
-; fsm_state.000111 ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
-+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top|adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state                                                                                    ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+; Name             ; fsm_state.000111 ; fsm_state.000110 ; fsm_state.000101 ; fsm_state.000100 ; fsm_state.000011 ; fsm_state.000010 ; fsm_state.000001 ; fsm_state.000000 ; fsm_state.001000 ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+; fsm_state.000000 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ;
+; fsm_state.000001 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 1                ; 0                ;
+; fsm_state.000010 ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 1                ; 0                ;
+; fsm_state.000011 ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.000100 ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.000101 ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.000110 ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.000111 ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.001000 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 1                ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
 
 
 Encoding Type:  One-Hot
@@ -661,20 +665,21 @@ Encoding Type:  One-Hot
 
 
 Encoding Type:  One-Hot
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |top|adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state                                                                 ;
-+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
-; Name             ; fsm_state.000111 ; fsm_state.000110 ; fsm_state.000101 ; fsm_state.000100 ; fsm_state.000011 ; fsm_state.000010 ; fsm_state.000001 ; fsm_state.000000 ;
-+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
-; fsm_state.000000 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ;
-; fsm_state.000001 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 1                ;
-; fsm_state.000010 ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 1                ;
-; fsm_state.000011 ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 1                ;
-; fsm_state.000100 ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 1                ;
-; fsm_state.000101 ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 1                ;
-; fsm_state.000110 ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
-; fsm_state.000111 ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
-+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top|adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state                                                                                    ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+; Name             ; fsm_state.000111 ; fsm_state.000110 ; fsm_state.000101 ; fsm_state.000100 ; fsm_state.000011 ; fsm_state.000010 ; fsm_state.000001 ; fsm_state.000000 ; fsm_state.001000 ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+; fsm_state.000000 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ;
+; fsm_state.000001 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 1                ; 0                ;
+; fsm_state.000010 ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 1                ; 0                ;
+; fsm_state.000011 ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.000100 ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.000101 ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.000110 ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.000111 ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.001000 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 1                ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
 
 
 Encoding Type:  One-Hot
@@ -699,20 +704,21 @@ Encoding Type:  One-Hot
 
 
 Encoding Type:  One-Hot
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |top|adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state                                                                 ;
-+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
-; Name             ; fsm_state.000111 ; fsm_state.000110 ; fsm_state.000101 ; fsm_state.000100 ; fsm_state.000011 ; fsm_state.000010 ; fsm_state.000001 ; fsm_state.000000 ;
-+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
-; fsm_state.000000 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ;
-; fsm_state.000001 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 1                ;
-; fsm_state.000010 ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 1                ;
-; fsm_state.000011 ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 1                ;
-; fsm_state.000100 ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 1                ;
-; fsm_state.000101 ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 1                ;
-; fsm_state.000110 ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
-; fsm_state.000111 ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
-+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top|adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state                                                                                    ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+; Name             ; fsm_state.000111 ; fsm_state.000110 ; fsm_state.000101 ; fsm_state.000100 ; fsm_state.000011 ; fsm_state.000010 ; fsm_state.000001 ; fsm_state.000000 ; fsm_state.001000 ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+; fsm_state.000000 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ;
+; fsm_state.000001 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 1                ; 0                ;
+; fsm_state.000010 ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 1                ; 0                ;
+; fsm_state.000011 ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.000100 ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.000101 ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.000110 ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.000111 ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.001000 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 1                ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
 
 
 Encoding Type:  One-Hot
@@ -737,20 +743,21 @@ Encoding Type:  One-Hot
 
 
 Encoding Type:  One-Hot
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |top|adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state                                                                 ;
-+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
-; Name             ; fsm_state.000111 ; fsm_state.000110 ; fsm_state.000101 ; fsm_state.000100 ; fsm_state.000011 ; fsm_state.000010 ; fsm_state.000001 ; fsm_state.000000 ;
-+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
-; fsm_state.000000 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ;
-; fsm_state.000001 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 1                ;
-; fsm_state.000010 ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 1                ;
-; fsm_state.000011 ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 1                ;
-; fsm_state.000100 ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 1                ;
-; fsm_state.000101 ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 1                ;
-; fsm_state.000110 ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
-; fsm_state.000111 ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
-+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top|adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state                                                                                    ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+; Name             ; fsm_state.000111 ; fsm_state.000110 ; fsm_state.000101 ; fsm_state.000100 ; fsm_state.000011 ; fsm_state.000010 ; fsm_state.000001 ; fsm_state.000000 ; fsm_state.001000 ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+; fsm_state.000000 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ;
+; fsm_state.000001 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 1                ; 0                ;
+; fsm_state.000010 ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 1                ; 0                ;
+; fsm_state.000011 ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.000100 ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.000101 ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.000110 ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.000111 ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.001000 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 1                ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
 
 
 Encoding Type:  One-Hot
@@ -775,20 +782,21 @@ Encoding Type:  One-Hot
 
 
 Encoding Type:  One-Hot
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |top|adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state                                                                 ;
-+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
-; Name             ; fsm_state.000111 ; fsm_state.000110 ; fsm_state.000101 ; fsm_state.000100 ; fsm_state.000011 ; fsm_state.000010 ; fsm_state.000001 ; fsm_state.000000 ;
-+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
-; fsm_state.000000 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ;
-; fsm_state.000001 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 1                ;
-; fsm_state.000010 ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 1                ;
-; fsm_state.000011 ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 1                ;
-; fsm_state.000100 ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 1                ;
-; fsm_state.000101 ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 1                ;
-; fsm_state.000110 ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
-; fsm_state.000111 ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
-+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top|adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state                                                                                    ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+; Name             ; fsm_state.000111 ; fsm_state.000110 ; fsm_state.000101 ; fsm_state.000100 ; fsm_state.000011 ; fsm_state.000010 ; fsm_state.000001 ; fsm_state.000000 ; fsm_state.001000 ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+; fsm_state.000000 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ;
+; fsm_state.000001 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 1                ; 0                ;
+; fsm_state.000010 ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 1                ; 0                ;
+; fsm_state.000011 ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.000100 ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.000101 ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.000110 ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.000111 ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ;
+; fsm_state.001000 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 1                ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
 
 
 Encoding Type:  One-Hot
@@ -826,6 +834,8 @@ Encoding Type:  One-Hot
 +----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+
 ; adf4159_tx_load_temp_reg[5]                                                            ; Stuck at GND due to stuck port data_in                                           ;
 ; adf4159_rx_load_temp_reg[4]                                                            ; Stuck at GND due to stuck port data_in                                           ;
+; freq_level_1_sum[5..7]                                                                 ; Stuck at GND due to stuck port data_in                                           ;
+; freq_level_2_sum[5..7]                                                                 ; Stuck at GND due to stuck port data_in                                           ;
 ; adf4159:adf4159_module_instanced[0].adf4159_inst|spi_reg_var_reg[31]                   ; Merged with adf4159:adf4159_module_instanced[0].adf4159_inst|spi_reg_var_reg[30] ;
 ; adf4159:adf4159_module_instanced[1].adf4159_inst|spi_reg_var_reg[31]                   ; Merged with adf4159:adf4159_module_instanced[1].adf4159_inst|spi_reg_var_reg[30] ;
 ; adf4159:adf4159_module_instanced[2].adf4159_inst|spi_reg_var_reg[31]                   ; Merged with adf4159:adf4159_module_instanced[2].adf4159_inst|spi_reg_var_reg[30] ;
@@ -1062,7 +1072,6 @@ Encoding Type:  One-Hot
 ; adf4159:adf4159_module_instanced[3].adf4159_inst|reg_var_temp[32]                      ; Merged with adf4159:adf4159_module_instanced[3].adf4159_inst|reg_var_temp[28]    ;
 ; adf4159:adf4159_module_instanced[4].adf4159_inst|reg_var_temp[32]                      ; Merged with adf4159:adf4159_module_instanced[4].adf4159_inst|reg_var_temp[28]    ;
 ; adf4159:adf4159_module_instanced[5].adf4159_inst|reg_var_temp[32]                      ; Merged with adf4159:adf4159_module_instanced[5].adf4159_inst|reg_var_temp[28]    ;
-; adf4159:adf4159_module_instanced[2].adf4159_inst|reg_var_temp[64]                      ; Merged with adf4159:adf4159_module_instanced[2].adf4159_inst|reg_var_temp[60]    ;
 ; fsm_load2_state~6                                                                      ; Lost fanout                                                                      ;
 ; fsm_load2_state~7                                                                      ; Lost fanout                                                                      ;
 ; fsm_load2_state~8                                                                      ; Lost fanout                                                                      ;
@@ -1087,72 +1096,66 @@ Encoding Type:  One-Hot
 ; adf4159:adf4159_module_instanced[5].adf4159_inst|fsm_state~17                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[5].adf4159_inst|fsm_state~18                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[5].adf4159_inst|fsm_state~19                          ; Lost fanout                                                                      ;
-; adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~10 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~11 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~12 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~13 ; Lost fanout                                                                      ;
-; adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~14 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~15 ; Lost fanout                                                                      ;
+; adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~16 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[4].adf4159_inst|fsm_state~14                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[4].adf4159_inst|fsm_state~15                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[4].adf4159_inst|fsm_state~16                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[4].adf4159_inst|fsm_state~17                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[4].adf4159_inst|fsm_state~18                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[4].adf4159_inst|fsm_state~19                          ; Lost fanout                                                                      ;
-; adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~10 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~11 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~12 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~13 ; Lost fanout                                                                      ;
-; adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~14 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~15 ; Lost fanout                                                                      ;
+; adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~16 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[3].adf4159_inst|fsm_state~14                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[3].adf4159_inst|fsm_state~15                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[3].adf4159_inst|fsm_state~16                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[3].adf4159_inst|fsm_state~17                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[3].adf4159_inst|fsm_state~18                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[3].adf4159_inst|fsm_state~19                          ; Lost fanout                                                                      ;
-; adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~10 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~11 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~12 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~13 ; Lost fanout                                                                      ;
-; adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~14 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~15 ; Lost fanout                                                                      ;
+; adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~16 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[2].adf4159_inst|fsm_state~14                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[2].adf4159_inst|fsm_state~15                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[2].adf4159_inst|fsm_state~16                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[2].adf4159_inst|fsm_state~17                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[2].adf4159_inst|fsm_state~18                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[2].adf4159_inst|fsm_state~19                          ; Lost fanout                                                                      ;
-; adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~10 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~11 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~12 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~13 ; Lost fanout                                                                      ;
-; adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~14 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~15 ; Lost fanout                                                                      ;
+; adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~16 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[1].adf4159_inst|fsm_state~14                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[1].adf4159_inst|fsm_state~15                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[1].adf4159_inst|fsm_state~16                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[1].adf4159_inst|fsm_state~17                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[1].adf4159_inst|fsm_state~18                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[1].adf4159_inst|fsm_state~19                          ; Lost fanout                                                                      ;
-; adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~10 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~11 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~12 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~13 ; Lost fanout                                                                      ;
-; adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~14 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~15 ; Lost fanout                                                                      ;
+; adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~16 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[0].adf4159_inst|fsm_state~14                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[0].adf4159_inst|fsm_state~15                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[0].adf4159_inst|fsm_state~16                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[0].adf4159_inst|fsm_state~17                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[0].adf4159_inst|fsm_state~18                          ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[0].adf4159_inst|fsm_state~19                          ; Lost fanout                                                                      ;
-; adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~10 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~11 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~12 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~13 ; Lost fanout                                                                      ;
-; adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~14 ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~15 ; Lost fanout                                                                      ;
+; adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state~16 ; Lost fanout                                                                      ;
 ; master_spi:master_spi_inst|fsm_write_state~7                                           ; Lost fanout                                                                      ;
 ; master_spi:master_spi_inst|fsm_write_state~8                                           ; Lost fanout                                                                      ;
 ; master_spi:master_spi_inst|fsm_write_state~9                                           ; Lost fanout                                                                      ;
@@ -1167,6 +1170,7 @@ Encoding Type:  One-Hot
 ; master_spi:master_spi_inst|fsm_read_state~13                                           ; Lost fanout                                                                      ;
 ; adf4159:adf4159_module_instanced[0].adf4159_inst|reg_var_temp[64]                      ; Merged with adf4159:adf4159_module_instanced[0].adf4159_inst|reg_var_temp[60]    ;
 ; adf4159:adf4159_module_instanced[1].adf4159_inst|reg_var_temp[64]                      ; Merged with adf4159:adf4159_module_instanced[1].adf4159_inst|reg_var_temp[60]    ;
+; adf4159:adf4159_module_instanced[2].adf4159_inst|reg_var_temp[64]                      ; Merged with adf4159:adf4159_module_instanced[2].adf4159_inst|reg_var_temp[60]    ;
 ; adf4159:adf4159_module_instanced[4].adf4159_inst|reg_var_temp[64]                      ; Merged with adf4159:adf4159_module_instanced[4].adf4159_inst|reg_var_temp[60]    ;
 ; adf4159:adf4159_module_instanced[5].adf4159_inst|reg_var_temp[64]                      ; Merged with adf4159:adf4159_module_instanced[5].adf4159_inst|reg_var_temp[60]    ;
 ; adf4159:adf4159_module_instanced[3].adf4159_inst|reg_var_temp[64]                      ; Merged with adf4159:adf4159_module_instanced[3].adf4159_inst|reg_var_temp[60]    ;
@@ -1251,12 +1255,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 4739  ;
+; Total registers                              ; 4789  ;
 ; Number of registers using Synchronous Clear  ; 1922  ;
 ; Number of registers using Synchronous Load   ; 132   ;
 ; Number of registers using Asynchronous Clear ; 630   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1806  ;
+; Number of registers using Clock Enable       ; 1804  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -1270,10 +1274,54 @@ Encoding Type:  One-Hot
 ; freq_trig1_dege[1]                                                                                                                                                                                                                                                                                                              ; 4       ;
 ; freq_trig2_dege[0]                                                                                                                                                                                                                                                                                                              ; 5       ;
 ; freq_trig2_dege[1]                                                                                                                                                                                                                                                                                                              ; 4       ;
-; master_spi:master_spi_inst|spi_cs_level                                                                                                                                                                                                                                                                                         ; 11      ;
-; master_spi:master_spi_inst|spi_clk_level                                                                                                                                                                                                                                                                                        ; 9       ;
+; master_spi:master_spi_inst|spi_cs_level                                                                                                                                                                                                                                                                                         ; 12      ;
+; master_spi:master_spi_inst|spi_clk_level                                                                                                                                                                                                                                                                                        ; 10      ;
 ; freq_level_sample_1                                                                                                                                                                                                                                                                                                             ; 1       ;
 ; freq_level_sample_2                                                                                                                                                                                                                                                                                                             ; 1       ;
+; master_spi:master_spi_inst|spi_cs_sample_sum[0]                                                                                                                                                                                                                                                                                 ; 2       ;
+; master_spi:master_spi_inst|spi_cs_sample_sum[1]                                                                                                                                                                                                                                                                                 ; 2       ;
+; master_spi:master_spi_inst|spi_cs_sample_sum[2]                                                                                                                                                                                                                                                                                 ; 2       ;
+; master_spi:master_spi_inst|spi_cs_sample_sum[3]                                                                                                                                                                                                                                                                                 ; 2       ;
+; freq_trig1_dege_samples[6]                                                                                                                                                                                                                                                                                                      ; 3       ;
+; freq_trig1_dege_samples[3]                                                                                                                                                                                                                                                                                                      ; 3       ;
+; freq_trig1_dege_samples[5]                                                                                                                                                                                                                                                                                                      ; 3       ;
+; freq_trig1_dege_samples[4]                                                                                                                                                                                                                                                                                                      ; 3       ;
+; freq_trig1_dege_samples[0]                                                                                                                                                                                                                                                                                                      ; 5       ;
+; freq_trig1_dege_samples[2]                                                                                                                                                                                                                                                                                                      ; 5       ;
+; freq_trig1_dege_samples[1]                                                                                                                                                                                                                                                                                                      ; 5       ;
+; freq_trig1_dege_samples[8]                                                                                                                                                                                                                                                                                                      ; 4       ;
+; freq_trig1_dege_samples[7]                                                                                                                                                                                                                                                                                                      ; 4       ;
+; freq_trig1_dege_samples[10]                                                                                                                                                                                                                                                                                                     ; 4       ;
+; freq_trig1_dege_samples[9]                                                                                                                                                                                                                                                                                                      ; 4       ;
+; freq_trig1_dege_samples[12]                                                                                                                                                                                                                                                                                                     ; 3       ;
+; freq_trig1_dege_samples[11]                                                                                                                                                                                                                                                                                                     ; 3       ;
+; freq_trig1_dege_samples[14]                                                                                                                                                                                                                                                                                                     ; 3       ;
+; freq_trig1_dege_samples[13]                                                                                                                                                                                                                                                                                                     ; 3       ;
+; freq_trig1_dege_samples[16]                                                                                                                                                                                                                                                                                                     ; 3       ;
+; freq_trig1_dege_samples[15]                                                                                                                                                                                                                                                                                                     ; 3       ;
+; freq_trig1_dege_samples[18]                                                                                                                                                                                                                                                                                                     ; 3       ;
+; freq_trig1_dege_samples[17]                                                                                                                                                                                                                                                                                                     ; 3       ;
+; freq_trig1_dege_samples[19]                                                                                                                                                                                                                                                                                                     ; 1       ;
+; freq_trig2_dege_samples[6]                                                                                                                                                                                                                                                                                                      ; 3       ;
+; freq_trig2_dege_samples[3]                                                                                                                                                                                                                                                                                                      ; 3       ;
+; freq_trig2_dege_samples[5]                                                                                                                                                                                                                                                                                                      ; 3       ;
+; freq_trig2_dege_samples[4]                                                                                                                                                                                                                                                                                                      ; 3       ;
+; freq_trig2_dege_samples[1]                                                                                                                                                                                                                                                                                                      ; 5       ;
+; freq_trig2_dege_samples[2]                                                                                                                                                                                                                                                                                                      ; 5       ;
+; freq_trig2_dege_samples[0]                                                                                                                                                                                                                                                                                                      ; 5       ;
+; freq_trig2_dege_samples[8]                                                                                                                                                                                                                                                                                                      ; 4       ;
+; freq_trig2_dege_samples[7]                                                                                                                                                                                                                                                                                                      ; 4       ;
+; freq_trig2_dege_samples[10]                                                                                                                                                                                                                                                                                                     ; 4       ;
+; freq_trig2_dege_samples[9]                                                                                                                                                                                                                                                                                                      ; 4       ;
+; freq_trig2_dege_samples[12]                                                                                                                                                                                                                                                                                                     ; 3       ;
+; freq_trig2_dege_samples[11]                                                                                                                                                                                                                                                                                                     ; 3       ;
+; freq_trig2_dege_samples[14]                                                                                                                                                                                                                                                                                                     ; 3       ;
+; freq_trig2_dege_samples[13]                                                                                                                                                                                                                                                                                                     ; 3       ;
+; freq_trig2_dege_samples[16]                                                                                                                                                                                                                                                                                                     ; 3       ;
+; freq_trig2_dege_samples[15]                                                                                                                                                                                                                                                                                                     ; 3       ;
+; freq_trig2_dege_samples[18]                                                                                                                                                                                                                                                                                                     ; 3       ;
+; freq_trig2_dege_samples[17]                                                                                                                                                                                                                                                                                                     ; 3       ;
+; freq_trig2_dege_samples[19]                                                                                                                                                                                                                                                                                                     ; 1       ;
 ; adf4159_r_counter_reg[0]                                                                                                                                                                                                                                                                                                        ; 1       ;
 ; adf4159_r_counter_reg[5]                                                                                                                                                                                                                                                                                                        ; 1       ;
 ; adf4159_r_counter_reg[10]                                                                                                                                                                                                                                                                                                       ; 1       ;
@@ -1295,7 +1343,7 @@ Encoding Type:  One-Hot
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[11]                                                                                                                                                  ; 1       ;
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[12]                                                                                                                                                  ; 1       ;
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[0]                                                                                                                                                   ; 1       ;
-; Total number of inverted registers = 29                                                                                                                                                                                                                                                                                         ;         ;
+; Total number of inverted registers = 73                                                                                                                                                                                                                                                                                         ;         ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -1304,81 +1352,92 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------+
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|reg_count[3]                               ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|reg_count[2]                               ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|reg_count[1]                               ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|reg_count[5]                               ;
 ; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|reg_count[0]                               ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|reg_count[3]                               ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|reg_count[2]                               ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|reg_count[5]                               ;
-; 3:1                ; 238 bits  ; 476 LEs       ; 238 LEs              ; 238 LEs                ; Yes        ; |top|adf4159_frac_reg[119]                                                                       ;
-; 3:1                ; 51 bits   ; 102 LEs       ; 51 LEs               ; 51 LEs                 ; Yes        ; |top|master_spi:master_spi_inst|data[33]                                                         ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top|master_spi:master_spi_inst|sample_count[3]                                                  ;
-; 3:1                ; 24 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |top|freq_level_1_sum[5]                                                                         ;
-; 4:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|reg_var_temp[257]                          ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|reg_count[1]                               ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|reg_count[1]                               ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|reg_count[1]                               ;
+; 3:1                ; 238 bits  ; 476 LEs       ; 238 LEs              ; 238 LEs                ; Yes        ; |top|adf4159_int_reg[55]                                                                         ;
+; 3:1                ; 51 bits   ; 102 LEs       ; 51 LEs               ; 51 LEs                 ; Yes        ; |top|master_spi:master_spi_inst|data[16]                                                         ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|master_spi:master_spi_inst|sample_count[3]                                                  ;
+; 4:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|reg_var_temp[120]                          ;
 ; 4:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|reg_var_temp[226]                          ;
-; 4:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|reg_var_temp[35]                           ;
+; 4:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|reg_var_temp[97]                           ;
 ; 4:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|reg_var_temp[258]                          ;
 ; 4:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|reg_var_temp[136]                          ;
-; 4:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|reg_var_temp[192]                          ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |top|adf4159_no[0]                                                                               ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[30]  ;
-; 4:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[10]  ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[30]  ;
-; 4:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[7]   ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[30]  ;
-; 4:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[9]   ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[30]  ;
-; 4:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[27]  ;
+; 4:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|reg_var_temp[321]                          ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |top|adf4159_no[3]                                                                               ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[31]  ;
+; 4:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[11]  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[31]  ;
+; 4:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[27]  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[31]  ;
+; 4:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[4]   ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[31]  ;
+; 4:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[10]  ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[30]  ;
-; 4:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[27]  ;
+; 4:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[24]  ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[30]  ;
-; 4:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[27]  ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top|master_spi:master_spi_inst|pll_lock_state[1]                                                ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|reg_var_temp[81]                           ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|reg_var_temp[13]                           ;
+; 4:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[1]   ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top|master_spi:master_spi_inst|pll_lock_state[2]                                                ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|reg_var_temp[54]                           ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|reg_var_temp[20]                           ;
 ; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|reg_var_temp[52]                           ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|reg_var_temp[49]                           ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|reg_var_temp[10]                           ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|reg_var_temp[58]                           ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|reg_var_temp[84]                           ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|reg_var_temp[16]                           ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|reg_var_temp[84]                           ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|reg_var_temp[8]                            ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|reg_var_temp[50]                           ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|reg_var_temp[81]                           ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|reg_var_temp[20]                           ;
 ; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|reg_var_temp[47]                           ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|reg_var_temp[49]                           ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|reg_var_temp[10]                           ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|reg_var_temp[79]                           ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|reg_var_temp[83]                           ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|reg_var_temp[20]                           ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|reg_var_temp[51]                           ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|reg_var_temp[54]                           ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|reg_var_temp[8]                            ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|reg_var_temp[51]                           ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|reg_var_temp[84]                           ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|reg_var_temp[20]                           ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|reg_var_temp[51]                           ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|reg_var_temp[82]                           ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|reg_var_temp[21]                           ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|reg_var_temp[47]                           ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|reg_var_temp[53]                           ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|reg_var_temp[10]                           ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|reg_var_temp[79]                           ;
 ; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst|load_bit_count[1] ;
 ; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst|load_bit_count[0] ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst|load_bit_count[5] ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst|load_bit_count[4] ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst|load_bit_count[5] ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst|load_bit_count[4] ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |top|adf4159_rx_load_reg[1]                                                                      ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |top|adf4159_tx_load_reg[4]                                                                      ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst|load_bit_count[4] ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst|load_bit_count[0] ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst|load_bit_count[2] ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst|load_bit_count[2] ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |top|adf4159_rx_load_reg[3]                                                                      ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |top|adf4159_tx_load_reg[3]                                                                      ;
 ; 6:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |top|master_spi:master_spi_inst|miso_bit_count[2]                                                ;
-; 7:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |top|master_spi:master_spi_inst|data_num[4]                                                      ;
+; 7:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |top|master_spi:master_spi_inst|data_num[6]                                                      ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst|delay_count[2]    ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst|delay_count[0]    ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst|delay_count[1]    ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst|delay_count[0]    ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst|delay_count[0]    ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst|delay_count[1]    ;
 ; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|spi_reg_var_reg[27]                        ;
-; 10:1               ; 25 bits   ; 150 LEs       ; 75 LEs               ; 75 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|spi_reg_var_reg[8]                         ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|spi_reg_var_reg[27]                        ;
-; 10:1               ; 25 bits   ; 150 LEs       ; 75 LEs               ; 75 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|spi_reg_var_reg[28]                        ;
+; 10:1               ; 25 bits   ; 150 LEs       ; 75 LEs               ; 75 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|spi_reg_var_reg[16]                        ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|spi_reg_var_reg[0]                         ;
+; 10:1               ; 25 bits   ; 150 LEs       ; 75 LEs               ; 75 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|spi_reg_var_reg[13]                        ;
 ; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|spi_reg_var_reg[0]                         ;
-; 10:1               ; 25 bits   ; 150 LEs       ; 75 LEs               ; 75 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|spi_reg_var_reg[25]                        ;
+; 10:1               ; 25 bits   ; 150 LEs       ; 75 LEs               ; 75 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|spi_reg_var_reg[15]                        ;
 ; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|spi_reg_var_reg[0]                         ;
-; 10:1               ; 25 bits   ; 150 LEs       ; 75 LEs               ; 75 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|spi_reg_var_reg[11]                        ;
+; 10:1               ; 25 bits   ; 150 LEs       ; 75 LEs               ; 75 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|spi_reg_var_reg[3]                         ;
 ; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|spi_reg_var_reg[27]                        ;
 ; 10:1               ; 25 bits   ; 150 LEs       ; 75 LEs               ; 75 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|spi_reg_var_reg[15]                        ;
 ; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|spi_reg_var_reg[27]                        ;
-; 10:1               ; 25 bits   ; 150 LEs       ; 75 LEs               ; 75 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|spi_reg_var_reg[12]                        ;
+; 10:1               ; 25 bits   ; 150 LEs       ; 75 LEs               ; 75 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|spi_reg_var_reg[21]                        ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|master_spi:master_spi_inst|spi_clk_level                                                    ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|freq_level_sample_2                                                                         ;
-; 16:1               ; 6 bits    ; 60 LEs        ; 24 LEs               ; 36 LEs                 ; No         ; |top|Mux5                                                                                        ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |top|master_spi:master_spi_inst|spi_cs_sample_sum[0]                                             ;
+; 16:1               ; 6 bits    ; 60 LEs        ; 24 LEs               ; 36 LEs                 ; No         ; |top|Mux3                                                                                        ;
 ; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |top|fsm_load2_state                                                                             ;
 ; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |top|fsm_load1_state                                                                             ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state         ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state         ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state         ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state         ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state         ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state         ;
 ; 9:1                ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |top|master_spi:master_spi_inst|fsm_write_state                                                  ;
 ; 9:1                ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |top|master_spi:master_spi_inst|fsm_write_state                                                  ;
 ; 9:1                ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|fsm_state                                  ;
@@ -1964,28 +2023,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 145                         ;
-; cycloneiii_ff         ; 2908                        ;
-;     ENA               ; 841                         ;
+; cycloneiii_ff         ; 2958                        ;
+;     ENA               ; 839                         ;
 ;     ENA SCLR          ; 240                         ;
 ;     ENA SLD           ; 48                          ;
 ;     SCLR              ; 1633                        ;
 ;     SCLR SLD          ; 1                           ;
 ;     SLD               ; 12                          ;
-;     plain             ; 133                         ;
-; cycloneiii_lcell_comb ; 3169                        ;
-;     arith             ; 129                         ;
-;         2 data inputs ; 117                         ;
-;         3 data inputs ; 12                          ;
-;     normal            ; 3040                        ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 41                          ;
-;         2 data inputs ; 151                         ;
-;         3 data inputs ; 505                         ;
-;         4 data inputs ; 2342                        ;
+;     plain             ; 185                         ;
+; cycloneiii_lcell_comb ; 3409                        ;
+;     arith             ; 146                         ;
+;         2 data inputs ; 114                         ;
+;         3 data inputs ; 32                          ;
+;     normal            ; 3263                        ;
+;         0 data inputs ; 5                           ;
+;         1 data inputs ; 42                          ;
+;         2 data inputs ; 214                         ;
+;         3 data inputs ; 510                         ;
+;         4 data inputs ; 2492                        ;
 ; cycloneiii_pll        ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 1.46                        ;
+; Max LUT depth         ; 7.30                        ;
+; Average LUT depth     ; 1.65                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1994,7 +2053,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:12     ;
+; Top            ; 00:00:09     ;
 +----------------+--------------+
 
 
@@ -2273,32 +2332,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-    Info: Processing started: Mon Apr 06 00:54:00 2020
+    Info: Processing started: Mon Apr 06 21:08:19 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PSTR4R70 -c PSTR4R70
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file pwr_rst.v
-    Info (12023): Found entity 1: pwr_rst File: D:/PSTR4R70(A)/pwr_rst.v Line: 3
+    Info (12023): Found entity 1: pwr_rst File: F:/PSTR4R70(A)/pwr_rst.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file top.v
-    Info (12023): Found entity 1: top File: D:/PSTR4R70(A)/top.v Line: 3
+    Info (12023): Found entity 1: top File: F:/PSTR4R70(A)/top.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file master_spi.v
-    Info (12023): Found entity 1: master_spi File: D:/PSTR4R70(A)/master_spi.v Line: 3
+    Info (12023): Found entity 1: master_spi File: F:/PSTR4R70(A)/master_spi.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file adf4159.v
-    Info (12023): Found entity 1: adf4159 File: D:/PSTR4R70(A)/adf4159.v Line: 3
+    Info (12023): Found entity 1: adf4159 File: F:/PSTR4R70(A)/adf4159.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file adf4159_spi.v
-    Info (12023): Found entity 1: adf4159_spi File: D:/PSTR4R70(A)/adf4159_spi.v Line: 3
+    Info (12023): Found entity 1: adf4159_spi File: F:/PSTR4R70(A)/adf4159_spi.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file top_tb.v
-    Info (12023): Found entity 1: top_tb File: D:/PSTR4R70(A)/top_tb.v Line: 3
+    Info (12023): Found entity 1: top_tb File: F:/PSTR4R70(A)/top_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file mypll.v
-    Info (12023): Found entity 1: mypll File: D:/PSTR4R70(A)/mypll.v Line: 39
+    Info (12023): Found entity 1: mypll File: F:/PSTR4R70(A)/mypll.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file mypll1.v
-    Info (12023): Found entity 1: mypll1 File: D:/PSTR4R70(A)/mypll1.v Line: 39
+    Info (12023): Found entity 1: mypll1 File: F:/PSTR4R70(A)/mypll1.v Line: 39
 Info (12127): Elaborating entity "top" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at top.v(305): truncated value with size 32 to match size of target (8) File: D:/PSTR4R70(A)/top.v Line: 305
-Info (12128): Elaborating entity "mypll1" for hierarchy "mypll1:mypll1_inst" File: D:/PSTR4R70(A)/top.v Line: 36
-Info (12128): Elaborating entity "altpll" for hierarchy "mypll1:mypll1_inst|altpll:altpll_component" File: D:/PSTR4R70(A)/mypll1.v Line: 94
-Info (12130): Elaborated megafunction instantiation "mypll1:mypll1_inst|altpll:altpll_component" File: D:/PSTR4R70(A)/mypll1.v Line: 94
-Info (12133): Instantiated megafunction "mypll1:mypll1_inst|altpll:altpll_component" with the following parameter: File: D:/PSTR4R70(A)/mypll1.v Line: 94
+Info (12128): Elaborating entity "mypll1" for hierarchy "mypll1:mypll1_inst" File: F:/PSTR4R70(A)/top.v Line: 36
+Info (12128): Elaborating entity "altpll" for hierarchy "mypll1:mypll1_inst|altpll:altpll_component" File: F:/PSTR4R70(A)/mypll1.v Line: 94
+Info (12130): Elaborated megafunction instantiation "mypll1:mypll1_inst|altpll:altpll_component" File: F:/PSTR4R70(A)/mypll1.v Line: 94
+Info (12133): Instantiated megafunction "mypll1:mypll1_inst|altpll:altpll_component" with the following parameter: File: F:/PSTR4R70(A)/mypll1.v Line: 94
     Info (12134): Parameter "bandwidth_type" = "AUTO"
     Info (12134): Parameter "clk0_divide_by" = "33177"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
@@ -2355,40 +2413,43 @@ Info (12133): Instantiated megafunction "mypll1:mypll1_inst|altpll:altpll_compon
     Info (12134): Parameter "self_reset_on_loss_lock" = "OFF"
     Info (12134): Parameter "width_clock" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mypll1_altpll.v
-    Info (12023): Found entity 1: mypll1_altpll File: D:/PSTR4R70(A)/db/mypll1_altpll.v Line: 29
-Info (12128): Elaborating entity "mypll1_altpll" for hierarchy "mypll1:mypll1_inst|altpll:altpll_component|mypll1_altpll:auto_generated" File: c:/intelfpga/18.0/quartus/libraries/megafunctions/altpll.tdf Line: 897
-Info (12128): Elaborating entity "pwr_rst" for hierarchy "pwr_rst:pwr_rst_inst" File: D:/PSTR4R70(A)/top.v Line: 47
-Info (12128): Elaborating entity "master_spi" for hierarchy "master_spi:master_spi_inst" File: D:/PSTR4R70(A)/top.v Line: 74
-Warning (10230): Verilog HDL assignment warning at master_spi.v(58): truncated value with size 32 to match size of target (4) File: D:/PSTR4R70(A)/master_spi.v Line: 58
-Warning (10230): Verilog HDL assignment warning at master_spi.v(65): truncated value with size 32 to match size of target (1) File: D:/PSTR4R70(A)/master_spi.v Line: 65
-Warning (10230): Verilog HDL assignment warning at master_spi.v(108): truncated value with size 32 to match size of target (7) File: D:/PSTR4R70(A)/master_spi.v Line: 108
-Warning (10230): Verilog HDL assignment warning at master_spi.v(161): truncated value with size 32 to match size of target (7) File: D:/PSTR4R70(A)/master_spi.v Line: 161
-Info (12128): Elaborating entity "adf4159" for hierarchy "adf4159:adf4159_module_instanced[0].adf4159_inst" File: D:/PSTR4R70(A)/top.v Line: 114
-Info (12128): Elaborating entity "adf4159_spi" for hierarchy "adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst" File: D:/PSTR4R70(A)/adf4159.v Line: 39
-Warning (10230): Verilog HDL assignment warning at adf4159_spi.v(52): truncated value with size 32 to match size of target (6) File: D:/PSTR4R70(A)/adf4159_spi.v Line: 52
+    Info (12023): Found entity 1: mypll1_altpll File: F:/PSTR4R70(A)/db/mypll1_altpll.v Line: 29
+Info (12128): Elaborating entity "mypll1_altpll" for hierarchy "mypll1:mypll1_inst|altpll:altpll_component|mypll1_altpll:auto_generated" File: d:/intelfpga/18.0/quartus/libraries/megafunctions/altpll.tdf Line: 897
+Info (12128): Elaborating entity "pwr_rst" for hierarchy "pwr_rst:pwr_rst_inst" File: F:/PSTR4R70(A)/top.v Line: 47
+Info (12128): Elaborating entity "master_spi" for hierarchy "master_spi:master_spi_inst" File: F:/PSTR4R70(A)/top.v Line: 74
+Warning (10230): Verilog HDL assignment warning at master_spi.v(57): truncated value with size 32 to match size of target (4) File: F:/PSTR4R70(A)/master_spi.v Line: 57
+Warning (10230): Verilog HDL assignment warning at master_spi.v(64): truncated value with size 32 to match size of target (1) File: F:/PSTR4R70(A)/master_spi.v Line: 64
+Warning (10230): Verilog HDL assignment warning at master_spi.v(107): truncated value with size 32 to match size of target (7) File: F:/PSTR4R70(A)/master_spi.v Line: 107
+Warning (10230): Verilog HDL assignment warning at master_spi.v(160): truncated value with size 32 to match size of target (7) File: F:/PSTR4R70(A)/master_spi.v Line: 160
+Info (12128): Elaborating entity "adf4159" for hierarchy "adf4159:adf4159_module_instanced[0].adf4159_inst" File: F:/PSTR4R70(A)/top.v Line: 114
+Info (12128): Elaborating entity "adf4159_spi" for hierarchy "adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst" File: F:/PSTR4R70(A)/adf4159.v Line: 39
+Warning (10230): Verilog HDL assignment warning at adf4159_spi.v(51): truncated value with size 32 to match size of target (3) File: F:/PSTR4R70(A)/adf4159_spi.v Line: 51
+Warning (10230): Verilog HDL assignment warning at adf4159_spi.v(57): truncated value with size 32 to match size of target (6) File: F:/PSTR4R70(A)/adf4159_spi.v Line: 57
+Warning (10230): Verilog HDL assignment warning at adf4159_spi.v(63): truncated value with size 32 to match size of target (3) File: F:/PSTR4R70(A)/adf4159_spi.v Line: 63
+Warning (10230): Verilog HDL assignment warning at adf4159_spi.v(74): truncated value with size 32 to match size of target (3) File: F:/PSTR4R70(A)/adf4159_spi.v Line: 74
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ae24.tdf
-    Info (12023): Found entity 1: altsyncram_ae24 File: D:/PSTR4R70(A)/db/altsyncram_ae24.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_ae24 File: F:/PSTR4R70(A)/db/altsyncram_ae24.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_tsc.tdf
-    Info (12023): Found entity 1: mux_tsc File: D:/PSTR4R70(A)/db/mux_tsc.tdf Line: 22
+    Info (12023): Found entity 1: mux_tsc File: F:/PSTR4R70(A)/db/mux_tsc.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_dvf.tdf
-    Info (12023): Found entity 1: decode_dvf File: D:/PSTR4R70(A)/db/decode_dvf.tdf Line: 22
+    Info (12023): Found entity 1: decode_dvf File: F:/PSTR4R70(A)/db/decode_dvf.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_1ii.tdf
-    Info (12023): Found entity 1: cntr_1ii File: D:/PSTR4R70(A)/db/cntr_1ii.tdf Line: 27
+    Info (12023): Found entity 1: cntr_1ii File: F:/PSTR4R70(A)/db/cntr_1ii.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_tgc.tdf
-    Info (12023): Found entity 1: cmpr_tgc File: D:/PSTR4R70(A)/db/cmpr_tgc.tdf Line: 22
+    Info (12023): Found entity 1: cmpr_tgc File: F:/PSTR4R70(A)/db/cmpr_tgc.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_m9j.tdf
-    Info (12023): Found entity 1: cntr_m9j File: D:/PSTR4R70(A)/db/cntr_m9j.tdf Line: 25
+    Info (12023): Found entity 1: cntr_m9j File: F:/PSTR4R70(A)/db/cntr_m9j.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_ggi.tdf
-    Info (12023): Found entity 1: cntr_ggi File: D:/PSTR4R70(A)/db/cntr_ggi.tdf Line: 27
+    Info (12023): Found entity 1: cntr_ggi File: F:/PSTR4R70(A)/db/cntr_ggi.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_rgc.tdf
-    Info (12023): Found entity 1: cmpr_rgc File: D:/PSTR4R70(A)/db/cmpr_rgc.tdf Line: 22
+    Info (12023): Found entity 1: cmpr_rgc File: F:/PSTR4R70(A)/db/cmpr_rgc.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_23j.tdf
-    Info (12023): Found entity 1: cntr_23j File: D:/PSTR4R70(A)/db/cntr_23j.tdf Line: 27
+    Info (12023): Found entity 1: cntr_23j File: F:/PSTR4R70(A)/db/cntr_23j.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_ngc.tdf
-    Info (12023): Found entity 1: cmpr_ngc File: D:/PSTR4R70(A)/db/cmpr_ngc.tdf Line: 22
+    Info (12023): Found entity 1: cmpr_ngc File: F:/PSTR4R70(A)/db/cmpr_ngc.tdf Line: 22
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2020.04.06.00:54:30 Progress: Loading sldf2162ca5/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2020.04.06.21:08:44 Progress: Loading sldf2162ca5/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -2399,49 +2460,49 @@ Info (11172): Ident: "alt_sld_fab" instantiated altera_connection_identification
 Info (11172): Alt_sld_fab: Done "alt_sld_fab" with 6 modules, 6 files
 Info (11171): Finished IP generation for the debug fabric: alt_sld_fab.
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sldf2162ca5/alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab File: D:/PSTR4R70(A)/db/ip/sldf2162ca5/alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab File: F:/PSTR4R70(A)/db/ip/sldf2162ca5/alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: D:/PSTR4R70(A)/db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: F:/PSTR4R70(A)/db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_ident.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: D:/PSTR4R70(A)/db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: F:/PSTR4R70(A)/db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_presplit.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: D:/PSTR4R70(A)/db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: F:/PSTR4R70(A)/db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd
-    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: D:/PSTR4R70(A)/db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: D:/PSTR4R70(A)/db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
+    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: F:/PSTR4R70(A)/db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: F:/PSTR4R70(A)/db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: D:/PSTR4R70(A)/db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: F:/PSTR4R70(A)/db/ip/sldf2162ca5/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "fs[0]" is stuck at GND File: D:/PSTR4R70(A)/top.v Line: 26
-    Warning (13410): Pin "fs[1]" is stuck at GND File: D:/PSTR4R70(A)/top.v Line: 26
-    Warning (13410): Pin "fs[2]" is stuck at GND File: D:/PSTR4R70(A)/top.v Line: 26
-    Warning (13410): Pin "fs[3]" is stuck at GND File: D:/PSTR4R70(A)/top.v Line: 26
-    Warning (13410): Pin "fs[4]" is stuck at GND File: D:/PSTR4R70(A)/top.v Line: 26
-    Warning (13410): Pin "fs[5]" is stuck at GND File: D:/PSTR4R70(A)/top.v Line: 26
-    Warning (13410): Pin "fs[6]" is stuck at GND File: D:/PSTR4R70(A)/top.v Line: 26
-    Warning (13410): Pin "fs[7]" is stuck at GND File: D:/PSTR4R70(A)/top.v Line: 26
+    Warning (13410): Pin "fs[0]" is stuck at GND File: F:/PSTR4R70(A)/top.v Line: 26
+    Warning (13410): Pin "fs[1]" is stuck at GND File: F:/PSTR4R70(A)/top.v Line: 26
+    Warning (13410): Pin "fs[2]" is stuck at GND File: F:/PSTR4R70(A)/top.v Line: 26
+    Warning (13410): Pin "fs[3]" is stuck at GND File: F:/PSTR4R70(A)/top.v Line: 26
+    Warning (13410): Pin "fs[4]" is stuck at GND File: F:/PSTR4R70(A)/top.v Line: 26
+    Warning (13410): Pin "fs[5]" is stuck at GND File: F:/PSTR4R70(A)/top.v Line: 26
+    Warning (13410): Pin "fs[6]" is stuck at GND File: F:/PSTR4R70(A)/top.v Line: 26
+    Warning (13410): Pin "fs[7]" is stuck at GND File: F:/PSTR4R70(A)/top.v Line: 26
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
-Info (17049): 102 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file D:/PSTR4R70(A)/output_files/PSTR4R70.map.smsg
+Info (17049): 96 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file F:/PSTR4R70(A)/output_files/PSTR4R70.map.smsg
 Critical Warning (35025): Partially connected in-system debug instance "auto_signaltap_0" to 257 of its 261 required data inputs, trigger inputs, acquisition clocks, and dynamic pins.  There were 0 illegal, 0 inaccessible, and 4 missing sources or connections.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 6386 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 6624 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 42 output pins
-    Info (21061): Implemented 5871 logic cells
+    Info (21061): Implemented 6109 logic cells
     Info (21064): Implemented 456 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 17 warnings
-    Info: Peak virtual memory: 4906 megabytes
-    Info: Processing ended: Mon Apr 06 00:54:58 2020
-    Info: Elapsed time: 00:00:58
-    Info: Total CPU time (on all processors): 00:01:26
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 4896 megabytes
+    Info: Processing ended: Mon Apr 06 21:09:14 2020
+    Info: Elapsed time: 00:00:55
+    Info: Total CPU time (on all processors): 00:01:34
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in D:/PSTR4R70(A)/output_files/PSTR4R70.map.smsg.
+The suppressed messages can be found in F:/PSTR4R70(A)/output_files/PSTR4R70.map.smsg.
 
 

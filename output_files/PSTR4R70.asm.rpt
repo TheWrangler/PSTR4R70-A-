@@ -1,5 +1,5 @@
 Assembler report for PSTR4R70
-Mon Apr 06 00:55:38 2020
+Mon Apr 06 21:09:44 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -11,7 +11,7 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
   3. Assembler Settings
   4. Assembler Encrypted IP Cores Summary
   5. Assembler Generated Files
-  6. Assembler Device Options: D:/PSTR4R70(A)/output_files/PSTR4R70.sof
+  6. Assembler Device Options: F:/PSTR4R70(A)/output_files/PSTR4R70.sof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Apr 06 00:55:38 2020 ;
+; Assembler Status      ; Successful - Mon Apr 06 21:09:44 2020 ;
 ; Revision Name         ; PSTR4R70                              ;
 ; Top-level Entity Name ; top                                   ;
 ; Family                ; Cyclone IV E                          ;
@@ -68,17 +68,17 @@ refer to the applicable agreement for further details.
 +------------------------------------------+
 ; File Name                                ;
 +------------------------------------------+
-; D:/PSTR4R70(A)/output_files/PSTR4R70.sof ;
+; F:/PSTR4R70(A)/output_files/PSTR4R70.sof ;
 +------------------------------------------+
 
 
 +--------------------------------------------------------------------+
-; Assembler Device Options: D:/PSTR4R70(A)/output_files/PSTR4R70.sof ;
+; Assembler Device Options: F:/PSTR4R70(A)/output_files/PSTR4R70.sof ;
 +----------------+---------------------------------------------------+
 ; Option         ; Setting                                           ;
 +----------------+---------------------------------------------------+
-; JTAG usercode  ; 0x0042EFF5                                        ;
-; Checksum       ; 0x0042EFF5                                        ;
+; JTAG usercode  ; 0x00448A4C                                        ;
+; Checksum       ; 0x00448A4C                                        ;
 +----------------+---------------------------------------------------+
 
 
@@ -88,15 +88,15 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-    Info: Processing started: Mon Apr 06 00:55:35 2020
+    Info: Processing started: Mon Apr 06 21:09:42 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off PSTR4R70 -c PSTR4R70
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4711 megabytes
-    Info: Processing ended: Mon Apr 06 00:55:38 2020
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 4699 megabytes
+    Info: Processing ended: Mon Apr 06 21:09:44 2020
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:03
 
 

@@ -23,9 +23,8 @@ module master_spi
 	input ack
 );
 
-
 	reg [3:0] spi_clk_sample_sum = 0;
-	reg [3:0] spi_cs_sample_sum = 0;
+	reg [3:0] spi_cs_sample_sum = 4'b1111;
 	reg spi_clk_level = 1;
 	reg spi_cs_level = 1;
 	reg [3:0] sample_count = 0;
@@ -33,7 +32,7 @@ module master_spi
 	always @ (posedge clk) begin
 		if(!rst) begin
 			spi_clk_sample_sum <= 0;
-			spi_cs_sample_sum <= 0;
+			spi_cs_sample_sum <= 4'b1111;
 			spi_clk_level <= 1;
 			spi_cs_level <= 1;
 			sample_count <= 0;
