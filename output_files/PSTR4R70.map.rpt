@@ -1,5 +1,5 @@
 Analysis & Synthesis report for PSTR4R70
-Mon Apr 06 21:09:14 2020
+Tue Apr 07 15:47:53 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -81,13 +81,13 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Apr 06 21:09:14 2020           ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 07 15:47:53 2020           ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
 ; Revision Name                      ; PSTR4R70                                        ;
 ; Top-level Entity Name              ; top                                             ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 6,033                                           ;
-;     Total combinational functions  ; 4,510                                           ;
+; Total logic elements               ; 6,030                                           ;
+;     Total combinational functions  ; 4,511                                           ;
 ;     Dedicated logic registers      ; 4,789                                           ;
 ; Total registers                    ; 4789                                            ;
 ; Total pins                         ; 53                                              ;
@@ -286,16 +286,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                    ;
 +---------------------------------------------+------------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 6,033                                                                                    ;
+; Estimated Total logic elements              ; 6,030                                                                                    ;
 ;                                             ;                                                                                          ;
-; Total combinational functions               ; 4510                                                                                     ;
+; Total combinational functions               ; 4511                                                                                     ;
 ; Logic element usage by number of LUT inputs ;                                                                                          ;
-;     -- 4 input functions                    ; 3270                                                                                     ;
-;     -- 3 input functions                    ; 698                                                                                      ;
-;     -- <=2 input functions                  ; 542                                                                                      ;
+;     -- 4 input functions                    ; 3271                                                                                     ;
+;     -- 3 input functions                    ; 695                                                                                      ;
+;     -- <=2 input functions                  ; 545                                                                                      ;
 ;                                             ;                                                                                          ;
 ; Logic elements by mode                      ;                                                                                          ;
-;     -- normal mode                          ; 4267                                                                                     ;
+;     -- normal mode                          ; 4268                                                                                     ;
 ;     -- arithmetic mode                      ; 243                                                                                      ;
 ;                                             ;                                                                                          ;
 ; Total registers                             ; 4789                                                                                     ;
@@ -312,7 +312,7 @@ refer to the applicable agreement for further details.
 ;                                             ;                                                                                          ;
 ; Maximum fan-out node                        ; mypll1:mypll1_inst|altpll:altpll_component|mypll1_altpll:auto_generated|wire_pll1_clk[0] ;
 ; Maximum fan-out                             ; 4482                                                                                     ;
-; Total fan-out                               ; 42246                                                                                    ;
+; Total fan-out                               ; 42251                                                                                    ;
 ; Average fan-out                             ; 4.28                                                                                     ;
 +---------------------------------------------+------------------------------------------------------------------------------------------+
 
@@ -322,11 +322,11 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                             ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |top                                                                                                                                    ; 4510 (291)          ; 4789 (373)                ; 466944      ; 0            ; 0       ; 0         ; 53   ; 0            ; |top                                                                                                                                                                                                                                                                                                                                            ; top                               ; work         ;
+; |top                                                                                                                                    ; 4511 (294)          ; 4789 (373)                ; 466944      ; 0            ; 0       ; 0         ; 53   ; 0            ; |top                                                                                                                                                                                                                                                                                                                                            ; top                               ; work         ;
 ;    |adf4159:adf4159_module_instanced[0].adf4159_inst|                                                                                   ; 488 (408)           ; 409 (355)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst                                                                                                                                                                                                                                                                                           ; adf4159                           ; work         ;
 ;       |adf4159_spi:adf4159_inst|                                                                                                        ; 80 (80)             ; 54 (54)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst                                                                                                                                                                                                                                                                  ; adf4159_spi                       ; work         ;
-;    |adf4159:adf4159_module_instanced[1].adf4159_inst|                                                                                   ; 486 (408)           ; 409 (355)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst                                                                                                                                                                                                                                                                                           ; adf4159                           ; work         ;
-;       |adf4159_spi:adf4159_inst|                                                                                                        ; 78 (78)             ; 54 (54)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst                                                                                                                                                                                                                                                                  ; adf4159_spi                       ; work         ;
+;    |adf4159:adf4159_module_instanced[1].adf4159_inst|                                                                                   ; 488 (408)           ; 409 (355)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst                                                                                                                                                                                                                                                                                           ; adf4159                           ; work         ;
+;       |adf4159_spi:adf4159_inst|                                                                                                        ; 80 (80)             ; 54 (54)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst                                                                                                                                                                                                                                                                  ; adf4159_spi                       ; work         ;
 ;    |adf4159:adf4159_module_instanced[2].adf4159_inst|                                                                                   ; 488 (408)           ; 409 (355)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst                                                                                                                                                                                                                                                                                           ; adf4159                           ; work         ;
 ;       |adf4159_spi:adf4159_inst|                                                                                                        ; 80 (80)             ; 54 (54)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst                                                                                                                                                                                                                                                                  ; adf4159_spi                       ; work         ;
 ;    |adf4159:adf4159_module_instanced[3].adf4159_inst|                                                                                   ; 488 (408)           ; 409 (355)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst                                                                                                                                                                                                                                                                                           ; adf4159                           ; work         ;
@@ -335,7 +335,7 @@ refer to the applicable agreement for further details.
 ;       |adf4159_spi:adf4159_inst|                                                                                                        ; 80 (80)             ; 54 (54)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst                                                                                                                                                                                                                                                                  ; adf4159_spi                       ; work         ;
 ;    |adf4159:adf4159_module_instanced[5].adf4159_inst|                                                                                   ; 488 (408)           ; 409 (355)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst                                                                                                                                                                                                                                                                                           ; adf4159                           ; work         ;
 ;       |adf4159_spi:adf4159_inst|                                                                                                        ; 80 (80)             ; 54 (54)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst                                                                                                                                                                                                                                                                  ; adf4159_spi                       ; work         ;
-;    |master_spi:master_spi_inst|                                                                                                         ; 142 (142)           ; 98 (98)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|master_spi:master_spi_inst                                                                                                                                                                                                                                                                                                                 ; master_spi                        ; work         ;
+;    |master_spi:master_spi_inst|                                                                                                         ; 138 (138)           ; 98 (98)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|master_spi:master_spi_inst                                                                                                                                                                                                                                                                                                                 ; master_spi                        ; work         ;
 ;    |mypll1:mypll1_inst|                                                                                                                 ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|mypll1:mypll1_inst                                                                                                                                                                                                                                                                                                                         ; mypll1                            ; work         ;
 ;       |altpll:altpll_component|                                                                                                         ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|mypll1:mypll1_inst|altpll:altpll_component                                                                                                                                                                                                                                                                                                 ; altpll                            ; work         ;
 ;          |mypll1_altpll:auto_generated|                                                                                                 ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|mypll1:mypll1_inst|altpll:altpll_component|mypll1_altpll:auto_generated                                                                                                                                                                                                                                                                    ; mypll1_altpll                     ; work         ;
@@ -1256,7 +1256,7 @@ Encoding Type:  One-Hot
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 4789  ;
-; Number of registers using Synchronous Clear  ; 1922  ;
+; Number of registers using Synchronous Clear  ; 1926  ;
 ; Number of registers using Synchronous Load   ; 132   ;
 ; Number of registers using Asynchronous Clear ; 630   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -1278,17 +1278,13 @@ Encoding Type:  One-Hot
 ; master_spi:master_spi_inst|spi_clk_level                                                                                                                                                                                                                                                                                        ; 10      ;
 ; freq_level_sample_1                                                                                                                                                                                                                                                                                                             ; 1       ;
 ; freq_level_sample_2                                                                                                                                                                                                                                                                                                             ; 1       ;
-; master_spi:master_spi_inst|spi_cs_sample_sum[0]                                                                                                                                                                                                                                                                                 ; 2       ;
-; master_spi:master_spi_inst|spi_cs_sample_sum[1]                                                                                                                                                                                                                                                                                 ; 2       ;
-; master_spi:master_spi_inst|spi_cs_sample_sum[2]                                                                                                                                                                                                                                                                                 ; 2       ;
-; master_spi:master_spi_inst|spi_cs_sample_sum[3]                                                                                                                                                                                                                                                                                 ; 2       ;
 ; freq_trig1_dege_samples[6]                                                                                                                                                                                                                                                                                                      ; 3       ;
 ; freq_trig1_dege_samples[3]                                                                                                                                                                                                                                                                                                      ; 3       ;
 ; freq_trig1_dege_samples[5]                                                                                                                                                                                                                                                                                                      ; 3       ;
 ; freq_trig1_dege_samples[4]                                                                                                                                                                                                                                                                                                      ; 3       ;
-; freq_trig1_dege_samples[0]                                                                                                                                                                                                                                                                                                      ; 5       ;
 ; freq_trig1_dege_samples[2]                                                                                                                                                                                                                                                                                                      ; 5       ;
-; freq_trig1_dege_samples[1]                                                                                                                                                                                                                                                                                                      ; 5       ;
+; freq_trig1_dege_samples[1]                                                                                                                                                                                                                                                                                                      ; 4       ;
+; freq_trig1_dege_samples[0]                                                                                                                                                                                                                                                                                                      ; 4       ;
 ; freq_trig1_dege_samples[8]                                                                                                                                                                                                                                                                                                      ; 4       ;
 ; freq_trig1_dege_samples[7]                                                                                                                                                                                                                                                                                                      ; 4       ;
 ; freq_trig1_dege_samples[10]                                                                                                                                                                                                                                                                                                     ; 4       ;
@@ -1306,8 +1302,8 @@ Encoding Type:  One-Hot
 ; freq_trig2_dege_samples[3]                                                                                                                                                                                                                                                                                                      ; 3       ;
 ; freq_trig2_dege_samples[5]                                                                                                                                                                                                                                                                                                      ; 3       ;
 ; freq_trig2_dege_samples[4]                                                                                                                                                                                                                                                                                                      ; 3       ;
-; freq_trig2_dege_samples[1]                                                                                                                                                                                                                                                                                                      ; 5       ;
 ; freq_trig2_dege_samples[2]                                                                                                                                                                                                                                                                                                      ; 5       ;
+; freq_trig2_dege_samples[1]                                                                                                                                                                                                                                                                                                      ; 5       ;
 ; freq_trig2_dege_samples[0]                                                                                                                                                                                                                                                                                                      ; 5       ;
 ; freq_trig2_dege_samples[8]                                                                                                                                                                                                                                                                                                      ; 4       ;
 ; freq_trig2_dege_samples[7]                                                                                                                                                                                                                                                                                                      ; 4       ;
@@ -1343,7 +1339,7 @@ Encoding Type:  One-Hot
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[11]                                                                                                                                                  ; 1       ;
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[12]                                                                                                                                                  ; 1       ;
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[0]                                                                                                                                                   ; 1       ;
-; Total number of inverted registers = 73                                                                                                                                                                                                                                                                                         ;         ;
+; Total number of inverted registers = 69                                                                                                                                                                                                                                                                                         ;         ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -1358,78 +1354,77 @@ Encoding Type:  One-Hot
 ; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|reg_count[1]                               ;
 ; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|reg_count[1]                               ;
 ; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|reg_count[1]                               ;
-; 3:1                ; 238 bits  ; 476 LEs       ; 238 LEs              ; 238 LEs                ; Yes        ; |top|adf4159_int_reg[55]                                                                         ;
-; 3:1                ; 51 bits   ; 102 LEs       ; 51 LEs               ; 51 LEs                 ; Yes        ; |top|master_spi:master_spi_inst|data[16]                                                         ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|master_spi:master_spi_inst|sample_count[3]                                                  ;
-; 4:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|reg_var_temp[120]                          ;
-; 4:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|reg_var_temp[226]                          ;
-; 4:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|reg_var_temp[97]                           ;
-; 4:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|reg_var_temp[258]                          ;
-; 4:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|reg_var_temp[136]                          ;
-; 4:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|reg_var_temp[321]                          ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |top|adf4159_no[3]                                                                               ;
+; 3:1                ; 238 bits  ; 476 LEs       ; 238 LEs              ; 238 LEs                ; Yes        ; |top|adf4159_int_reg[43]                                                                         ;
+; 3:1                ; 51 bits   ; 102 LEs       ; 51 LEs               ; 51 LEs                 ; Yes        ; |top|master_spi:master_spi_inst|data[21]                                                         ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top|master_spi:master_spi_inst|spi_cs_sample_sum[3]                                             ;
+; 4:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|reg_var_temp[88]                           ;
+; 4:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|reg_var_temp[88]                           ;
+; 4:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|reg_var_temp[89]                           ;
+; 4:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|reg_var_temp[97]                           ;
+; 4:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|reg_var_temp[88]                           ;
+; 4:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|reg_var_temp[90]                           ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |top|adf4159_no[2]                                                                               ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[31]  ;
-; 4:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[11]  ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[31]  ;
-; 4:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[27]  ;
+; 4:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[4]   ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[30]  ;
+; 4:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[15]  ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[31]  ;
-; 4:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[4]   ;
+; 4:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[25]  ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[31]  ;
-; 4:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[10]  ;
+; 4:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[23]  ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[30]  ;
-; 4:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[24]  ;
+; 4:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[29]  ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[30]  ;
-; 4:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[1]   ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top|master_spi:master_spi_inst|pll_lock_state[2]                                                ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|reg_var_temp[54]                           ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|reg_var_temp[20]                           ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|reg_var_temp[52]                           ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|reg_var_temp[84]                           ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|reg_var_temp[8]                            ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|reg_var_temp[50]                           ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|reg_var_temp[81]                           ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|reg_var_temp[20]                           ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|reg_var_temp[47]                           ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|reg_var_temp[84]                           ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|reg_var_temp[20]                           ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|reg_var_temp[51]                           ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|reg_var_temp[82]                           ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|reg_var_temp[21]                           ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|reg_var_temp[47]                           ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|reg_var_temp[53]                           ;
+; 4:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst|reg_var_temp[18]  ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top|master_spi:master_spi_inst|pll_lock_state[1]                                                ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|reg_var_temp[80]                           ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|reg_var_temp[10]                           ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|reg_var_temp[57]                           ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|reg_var_temp[80]                           ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|reg_var_temp[13]                           ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|reg_var_temp[56]                           ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|reg_var_temp[84]                           ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|reg_var_temp[10]                           ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|reg_var_temp[58]                           ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|reg_var_temp[54]                           ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|reg_var_temp[8]                            ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|reg_var_temp[56]                           ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|reg_var_temp[55]                           ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|reg_var_temp[20]                           ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|reg_var_temp[79]                           ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|reg_var_temp[49]                           ;
 ; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|reg_var_temp[10]                           ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|reg_var_temp[79]                           ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|reg_var_temp[57]                           ;
 ; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst|load_bit_count[1] ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst|load_bit_count[0] ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst|load_bit_count[4] ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst|load_bit_count[0] ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst|load_bit_count[2] ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst|load_bit_count[4] ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst|load_bit_count[0] ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst|load_bit_count[3] ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst|load_bit_count[5] ;
 ; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst|load_bit_count[2] ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |top|adf4159_rx_load_reg[3]                                                                      ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |top|adf4159_tx_load_reg[3]                                                                      ;
-; 6:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |top|master_spi:master_spi_inst|miso_bit_count[2]                                                ;
-; 7:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |top|master_spi:master_spi_inst|data_num[6]                                                      ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst|delay_count[2]    ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |top|adf4159_rx_load_reg[5]                                                                      ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |top|adf4159_tx_load_reg[2]                                                                      ;
+; 6:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |top|master_spi:master_spi_inst|miso_bit_count[0]                                                ;
+; 7:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |top|master_spi:master_spi_inst|data_num[1]                                                      ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst|delay_count[1]    ;
 ; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|adf4159_spi:adf4159_inst|delay_count[0]    ;
 ; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|adf4159_spi:adf4159_inst|delay_count[1]    ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst|delay_count[0]    ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|adf4159_spi:adf4159_inst|delay_count[1]    ;
 ; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|adf4159_spi:adf4159_inst|delay_count[0]    ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst|delay_count[1]    ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|adf4159_spi:adf4159_inst|delay_count[2]    ;
 ; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|spi_reg_var_reg[27]                        ;
-; 10:1               ; 25 bits   ; 150 LEs       ; 75 LEs               ; 75 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|spi_reg_var_reg[16]                        ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|spi_reg_var_reg[0]                         ;
-; 10:1               ; 25 bits   ; 150 LEs       ; 75 LEs               ; 75 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|spi_reg_var_reg[13]                        ;
+; 10:1               ; 25 bits   ; 150 LEs       ; 75 LEs               ; 75 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|spi_reg_var_reg[4]                         ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|spi_reg_var_reg[27]                        ;
+; 10:1               ; 25 bits   ; 150 LEs       ; 75 LEs               ; 75 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[4].adf4159_inst|spi_reg_var_reg[14]                        ;
 ; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|spi_reg_var_reg[0]                         ;
-; 10:1               ; 25 bits   ; 150 LEs       ; 75 LEs               ; 75 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|spi_reg_var_reg[15]                        ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|spi_reg_var_reg[0]                         ;
-; 10:1               ; 25 bits   ; 150 LEs       ; 75 LEs               ; 75 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|spi_reg_var_reg[3]                         ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|spi_reg_var_reg[27]                        ;
-; 10:1               ; 25 bits   ; 150 LEs       ; 75 LEs               ; 75 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|spi_reg_var_reg[15]                        ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|spi_reg_var_reg[27]                        ;
-; 10:1               ; 25 bits   ; 150 LEs       ; 75 LEs               ; 75 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|spi_reg_var_reg[21]                        ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|master_spi:master_spi_inst|spi_clk_level                                                    ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |top|master_spi:master_spi_inst|spi_cs_sample_sum[0]                                             ;
-; 16:1               ; 6 bits    ; 60 LEs        ; 24 LEs               ; 36 LEs                 ; No         ; |top|Mux3                                                                                        ;
+; 10:1               ; 25 bits   ; 150 LEs       ; 75 LEs               ; 75 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[3].adf4159_inst|spi_reg_var_reg[16]                        ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|spi_reg_var_reg[27]                        ;
+; 10:1               ; 25 bits   ; 150 LEs       ; 75 LEs               ; 75 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[2].adf4159_inst|spi_reg_var_reg[7]                         ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|spi_reg_var_reg[0]                         ;
+; 10:1               ; 25 bits   ; 150 LEs       ; 75 LEs               ; 75 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[1].adf4159_inst|spi_reg_var_reg[9]                         ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|spi_reg_var_reg[0]                         ;
+; 10:1               ; 25 bits   ; 150 LEs       ; 75 LEs               ; 75 LEs                 ; Yes        ; |top|adf4159:adf4159_module_instanced[0].adf4159_inst|spi_reg_var_reg[19]                        ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|master_spi:master_spi_inst|spi_cs_level                                                     ;
+; 16:1               ; 6 bits    ; 60 LEs        ; 24 LEs               ; 36 LEs                 ; No         ; |top|Mux4                                                                                        ;
 ; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |top|fsm_load2_state                                                                             ;
 ; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |top|fsm_load1_state                                                                             ;
 ; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |top|adf4159:adf4159_module_instanced[5].adf4159_inst|adf4159_spi:adf4159_inst|fsm_state         ;
@@ -2027,20 +2022,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA               ; 839                         ;
 ;     ENA SCLR          ; 240                         ;
 ;     ENA SLD           ; 48                          ;
-;     SCLR              ; 1633                        ;
+;     SCLR              ; 1637                        ;
 ;     SCLR SLD          ; 1                           ;
 ;     SLD               ; 12                          ;
-;     plain             ; 185                         ;
-; cycloneiii_lcell_comb ; 3409                        ;
+;     plain             ; 181                         ;
+; cycloneiii_lcell_comb ; 3410                        ;
 ;     arith             ; 146                         ;
 ;         2 data inputs ; 114                         ;
 ;         3 data inputs ; 32                          ;
-;     normal            ; 3263                        ;
+;     normal            ; 3264                        ;
 ;         0 data inputs ; 5                           ;
 ;         1 data inputs ; 42                          ;
-;         2 data inputs ; 214                         ;
-;         3 data inputs ; 510                         ;
-;         4 data inputs ; 2492                        ;
+;         2 data inputs ; 217                         ;
+;         3 data inputs ; 507                         ;
+;         4 data inputs ; 2493                        ;
 ; cycloneiii_pll        ; 1                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.30                        ;
@@ -2332,7 +2327,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-    Info: Processing started: Mon Apr 06 21:08:19 2020
+    Info: Processing started: Tue Apr 07 15:47:01 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PSTR4R70 -c PSTR4R70
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -2449,7 +2444,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_ngc File: F:/PSTR4R70(A)/db/cmpr_ngc.tdf Line: 22
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2020.04.06.21:08:44 Progress: Loading sldf2162ca5/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2020.04.07.15:47:25 Progress: Loading sldf2162ca5/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -2487,17 +2482,17 @@ Info (144001): Generated suppressed messages file F:/PSTR4R70(A)/output_files/PS
 Critical Warning (35025): Partially connected in-system debug instance "auto_signaltap_0" to 257 of its 261 required data inputs, trigger inputs, acquisition clocks, and dynamic pins.  There were 0 illegal, 0 inaccessible, and 4 missing sources or connections.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 6624 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 6621 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 42 output pins
-    Info (21061): Implemented 6109 logic cells
+    Info (21061): Implemented 6106 logic cells
     Info (21064): Implemented 456 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
-    Info: Peak virtual memory: 4896 megabytes
-    Info: Processing ended: Mon Apr 06 21:09:14 2020
-    Info: Elapsed time: 00:00:55
-    Info: Total CPU time (on all processors): 00:01:34
+    Info: Peak virtual memory: 4893 megabytes
+    Info: Processing ended: Tue Apr 07 15:47:53 2020
+    Info: Elapsed time: 00:00:52
+    Info: Total CPU time (on all processors): 00:01:25
 
 
 +------------------------------------------+

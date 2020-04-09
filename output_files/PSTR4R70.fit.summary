@@ -1,12 +1,12 @@
-Fitter Status : Successful - Mon Apr 06 21:09:38 2020
+Fitter Status : Successful - Tue Apr 07 15:48:22 2020
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 Revision Name : PSTR4R70
 Top-level Entity Name : top
 Family : Cyclone IV E
 Device : EP4CE15E22I7
 Timing Models : Final
-Total logic elements : 5,931 / 15,408 ( 38 % )
-    Total combinational functions : 4,514 / 15,408 ( 29 % )
+Total logic elements : 5,930 / 15,408 ( 38 % )
+    Total combinational functions : 4,515 / 15,408 ( 29 % )
     Dedicated logic registers : 4,789 / 15,408 ( 31 % )
 Total registers : 4789
 Total pins : 53 / 82 ( 65 % )
